@@ -235,8 +235,18 @@
     <script src="js/main.js"></script>
     <script src="js/modern-animations.js"></script>
     <script>
-        document.getElementById('mobile-menu-button')?.addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
+        document.getElementById('mobile-menu-button')?.addEventListener('click', function(e) {
+            e.stopPropagation();
+            e.preventDefault();
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu) {
+                mobileMenu.classList.toggle('hidden');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.style.display = 'block';
+                } else {
+                    mobileMenu.style.display = 'none';
+                }
+            }
         });
         window.addEventListener('scroll', function() {
             const nav = document.getElementById('main-nav');
