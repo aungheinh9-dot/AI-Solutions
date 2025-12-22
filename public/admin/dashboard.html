@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - AI Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Raleway:wght@300;400;500;600;700;800;900&family=Oswald:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/modern-theme.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-gradient-to-br from-emerald-50 via-cyan-50 to-blue-50">
+    <!-- Navigation -->
+    <nav class="modern-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 via-cyan-500 to-blue-500 rounded-xl flex items-center justify-center shadow-lg">
+                        <i class="fas fa-shield-alt text-white text-xl"></i>
+                    </div>
+                    <h1 class="text-2xl font-bold gradient-text">AI Solutions Admin</h1>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="text-gray-700 font-medium" id="admin-email"></span>
+                    <button id="logout-btn" class="btn-modern btn-secondary px-4 py-2">
+                        <i class="fas fa-sign-out-alt mr-2"></i>Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto py-8 sm:px-6 lg:px-8">
+        <!-- Stats Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div class="glass-card p-6 observe-on-scroll">
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-xl flex items-center justify-center shadow-lg">
+                        <i class="fas fa-envelope text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <dt class="text-sm font-medium text-gray-500">Total Inquiries</dt>
+                        <dd class="text-2xl font-black gradient-text" id="total-inquiries">-</dd>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="glass-card p-6 observe-on-scroll">
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center shadow-lg">
+                        <i class="fas fa-plus-circle text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <dt class="text-sm font-medium text-gray-500">New Inquiries</dt>
+                        <dd class="text-2xl font-black gradient-text" id="new-inquiries">-</dd>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="glass-card p-6 observe-on-scroll">
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-xl flex items-center justify-center shadow-lg">
+                        <i class="fas fa-clock text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <dt class="text-sm font-medium text-gray-500">In Progress</dt>
+                        <dd class="text-2xl font-black gradient-text" id="in-progress">-</dd>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="glass-card p-6 observe-on-scroll">
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center shadow-lg">
+                        <i class="fas fa-check-circle text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <dt class="text-sm font-medium text-gray-500">Completed</dt>
+                        <dd class="text-2xl font-black gradient-text" id="completed">-</dd>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters and Actions -->
+        <div class="glass-card p-6 mb-6 observe-on-scroll">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div class="flex items-center gap-4">
+                    <select id="status-filter" class="px-4 py-2 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent bg-white">
+                        <option value="all">All Status</option>
+                        <option value="new">New</option>
+                        <option value="contacted">Contacted</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="completed">Completed</option>
+                        <option value="closed">Closed</option>
+                    </select>
+                    
+                    <button id="refresh-btn" class="btn-modern btn-primary px-4 py-2">
+                        <i class="fas fa-refresh mr-2"></i>Refresh
+                    </button>
+                </div>
+                
+                <div>
+                    <button id="export-btn" class="btn-modern bg-gradient-to-r from-green-500 to-emerald-500 text-white px-4 py-2 hover:from-green-600 hover:to-emerald-600">
+                        <i class="fas fa-download mr-2"></i>Export
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Inquiries Table -->
+        <div class="glass-card overflow-hidden observe-on-scroll">
+            <div class="px-6 py-5 border-b border-gray-200">
+                <h3 class="text-2xl font-black gradient-text">Customer Inquiries</h3>
+                <p class="mt-1 text-gray-600">Manage and track customer inquiries</p>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Email</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Company</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="inquiries-table-body" class="bg-white divide-y divide-gray-200">
+                        <!-- Inquiries will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inquiry Details Modal -->
+    <div id="inquiry-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm overflow-y-auto h-full w-full hidden z-50 flex items-center justify-center p-4">
+        <div class="relative glass-card rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-black gradient-text">Inquiry Details</h3>
+                    <button id="close-modal" class="text-gray-400 hover:text-gray-600 transition-colors">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                
+                <div id="inquiry-details" class="space-y-4">
+                    <!-- Inquiry details will be loaded here -->
+                </div>
+                
+                <div class="mt-6 flex justify-end gap-3">
+                    <button id="close-modal-btn" class="btn-modern btn-secondary px-6 py-3">
+                        Close
+                    </button>
+                    <button id="update-status-btn" class="btn-modern btn-primary px-6 py-3">
+                        Update Status
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        class AdminDashboard {
+            constructor() {
+                this.token = localStorage.getItem('admin_token');
+                this.user = JSON.parse(localStorage.getItem('admin_user') || '{}');
+                this.inquiries = [];
+                this.currentInquiry = null;
+                
+                this.init();
+            }
+            
+            init() {
+                this.checkAuth();
+                this.bindEvents();
+                this.loadStats();
+                this.loadInquiries();
+            }
+            
+            checkAuth() {
+                if (!this.token) {
+                    window.location.href = '/admin/login';
+                    return;
+                }
+                
+                document.getElementById('admin-email').textContent = this.user.email || 'Admin';
+            }
+            
+            bindEvents() {
+                document.getElementById('logout-btn').addEventListener('click', () => this.logout());
+                document.getElementById('refresh-btn').addEventListener('click', () => this.loadInquiries());
+                document.getElementById('status-filter').addEventListener('change', () => this.loadInquiries());
+                document.getElementById('close-modal').addEventListener('click', () => this.closeModal());
+                document.getElementById('close-modal-btn').addEventListener('click', () => this.closeModal());
+                document.getElementById('update-status-btn').addEventListener('click', () => this.updateStatus());
+            }
+            
+            async loadStats() {
+                try {
+                    const response = await fetch('/admin/api/stats', {
+                        headers: {
+                            'Authorization': `Bearer ${this.token}`
+                        }
+                    });
+                    
+                    if (response.ok) {
+                        const data = await response.json();
+                        const stats = data.stats;
+                        
+                        document.getElementById('total-inquiries').textContent = stats.total || 0;
+                        document.getElementById('new-inquiries').textContent = stats.new || 0;
+                        document.getElementById('in-progress').textContent = stats.inProgress || 0;
+                        document.getElementById('completed').textContent = stats.completed || 0;
+                    }
+                } catch (error) {
+                    console.error('Error loading stats:', error);
+                }
+            }
+            
+            async loadInquiries() {
+                try {
+                    const status = document.getElementById('status-filter').value;
+                    const url = status === 'all' ? '/admin/api/inquiries' : `/admin/api/inquiries?status=${status}`;
+                    
+                    const response = await fetch(url, {
+                        headers: {
+                            'Authorization': `Bearer ${this.token}`
+                        }
+                    });
+                    
+                    if (response.ok) {
+                        const data = await response.json();
+                        this.inquiries = data.inquiries || [];
+                        this.renderInquiries();
+                    } else if (response.status === 401) {
+                        this.logout();
+                    }
+                } catch (error) {
+                    console.error('Error loading inquiries:', error);
+                }
+            }
+            
+            renderInquiries() {
+                const tbody = document.getElementById('inquiries-table-body');
+                tbody.innerHTML = '';
+                
+                if (this.inquiries.length === 0) {
+                    tbody.innerHTML = `
+                        <tr>
+                            <td colspan="6" class="px-6 py-4 text-center text-gray-500">
+                                No inquiries found
+                            </td>
+                        </tr>
+                    `;
+                    return;
+                }
+                
+                this.inquiries.forEach(inquiry => {
+                    const row = document.createElement('tr');
+                    row.className = 'hover:bg-gray-50';
+                    
+                    const statusColor = this.getStatusColor(inquiry.status);
+                    const date = new Date(inquiry.createdAt).toLocaleDateString();
+                    
+                    row.innerHTML = `
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                            ${inquiry.name}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                            ${inquiry.email}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                            ${inquiry.company || '-'}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${statusColor}">
+                                ${inquiry.status}
+                            </span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                            ${date}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                            <button onclick="dashboard.viewInquiry('${inquiry.id}')" class="text-royal-blue hover:text-royal-blue-dark mr-3">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button onclick="dashboard.deleteInquiry('${inquiry.id}')" class="text-red-600 hover:text-red-900">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </td>
+                    `;
+                    
+                    tbody.appendChild(row);
+                });
+            }
+            
+            getStatusColor(status) {
+                const colors = {
+                    'new': 'bg-green-100 text-green-800',
+                    'contacted': 'bg-blue-100 text-blue-800',
+                    'in-progress': 'bg-yellow-100 text-yellow-800',
+                    'completed': 'bg-green-100 text-green-800',
+                    'closed': 'bg-gray-100 text-gray-800'
+                };
+                return colors[status] || 'bg-gray-100 text-gray-800';
+            }
+            
+            async viewInquiry(id) {
+                try {
+                    const response = await fetch(`/admin/api/inquiries/${id}`, {
+                        headers: {
+                            'Authorization': `Bearer ${this.token}`
+                        }
+                    });
+                    
+                    if (response.ok) {
+                        const data = await response.json();
+                        this.currentInquiry = data.inquiry;
+                        this.showInquiryModal();
+                    }
+                } catch (error) {
+                    console.error('Error loading inquiry:', error);
+                }
+            }
+            
+            showInquiryModal() {
+                const inquiry = this.currentInquiry;
+                const details = document.getElementById('inquiry-details');
+                
+                details.innerHTML = `
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Name</label>
+                            <p class="mt-1 text-sm text-gray-900">${inquiry.name}</p>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Email</label>
+                            <p class="mt-1 text-sm text-gray-900">${inquiry.email}</p>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Company</label>
+                            <p class="mt-1 text-sm text-gray-900">${inquiry.company || 'Not provided'}</p>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Phone</label>
+                            <p class="mt-1 text-sm text-gray-900">${inquiry.phone || 'Not provided'}</p>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Country</label>
+                            <p class="mt-1 text-sm text-gray-900">${inquiry.country || 'Not provided'}</p>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Job Title</label>
+                            <p class="mt-1 text-sm text-gray-900">${inquiry.jobTitle || 'Not provided'}</p>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium text-gray-700">Job Details</label>
+                            <p class="mt-1 text-sm text-gray-900">${inquiry.jobDetails}</p>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Status</label>
+                            <select id="status-select" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-royal-blue focus:border-royal-blue">
+                                <option value="new" ${inquiry.status === 'new' ? 'selected' : ''}>New</option>
+                                <option value="contacted" ${inquiry.status === 'contacted' ? 'selected' : ''}>Contacted</option>
+                                <option value="in-progress" ${inquiry.status === 'in-progress' ? 'selected' : ''}>In Progress</option>
+                                <option value="completed" ${inquiry.status === 'completed' ? 'selected' : ''}>Completed</option>
+                                <option value="closed" ${inquiry.status === 'closed' ? 'selected' : ''}>Closed</option>
+                            </select>
+                        </div>
+                    </div>
+                `;
+                
+                document.getElementById('inquiry-modal').classList.remove('hidden');
+            }
+            
+            closeModal() {
+                document.getElementById('inquiry-modal').classList.add('hidden');
+                this.currentInquiry = null;
+            }
+            
+            async updateStatus() {
+                if (!this.currentInquiry) return;
+                
+                const newStatus = document.getElementById('status-select').value;
+                
+                try {
+                    const response = await fetch(`/admin/api/inquiries/${this.currentInquiry.id}`, {
+                        method: 'PUT',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Authorization': `Bearer ${this.token}`
+                        },
+                        body: JSON.stringify({ status: newStatus })
+                    });
+                    
+                    if (response.ok) {
+                        this.closeModal();
+                        this.loadInquiries();
+                        this.loadStats();
+                    }
+                } catch (error) {
+                    console.error('Error updating status:', error);
+                }
+            }
+            
+            async deleteInquiry(id) {
+                if (!confirm('Are you sure you want to delete this inquiry?')) return;
+                
+                try {
+                    const response = await fetch(`/admin/api/inquiries/${id}`, {
+                        method: 'DELETE',
+                        headers: {
+                            'Authorization': `Bearer ${this.token}`
+                        }
+                    });
+                    
+                    if (response.ok) {
+                        this.loadInquiries();
+                        this.loadStats();
+                    }
+                } catch (error) {
+                    console.error('Error deleting inquiry:', error);
+                }
+            }
+            
+            logout() {
+                localStorage.removeItem('admin_token');
+                localStorage.removeItem('admin_user');
+                window.location.href = '/admin/login';
+            }
+        }
+        
+        // Initialize dashboard
+        const dashboard = new AdminDashboard();
+    </script>
+    <script src="../js/modern-animations.js"></script>
+</body>
+</html>

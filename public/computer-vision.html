@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Vision - AI Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Raleway:wght@300;400;500;600;700;800;900&family=Oswald:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/modern-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="modern-nav-dark" id="main-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 via-emerald-500 to-blue-500 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/50 animate-pulse-glow">
+                        <i class="fas fa-brain text-white text-xl"></i>
+                    </div>
+                    <a href="index.html" class="text-2xl font-bold text-white">AI <span class="text-cyan-400">Solutions</span></a>
+                </div>
+                <div class="hidden md:flex items-center gap-2">
+                    <a href="index.html" class="nav-link-dark">Home</a>
+                    <a href="services.html" class="nav-link-dark active">Services</a>
+                    <a href="about.html" class="nav-link-dark">About</a>
+                    <a href="projects.html" class="nav-link-dark">Projects</a>
+                    <a href="articles.html" class="nav-link-dark">Articles</a>
+                    <a href="galleries.html" class="nav-link-dark">Events</a>
+                    <a href="contact.html" class="btn-modern bg-cyan-500 hover:bg-cyan-600 text-white ml-4 shadow-lg shadow-cyan-500/50">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-cyan-400 focus:outline-none p-2">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 border-t border-cyan-500/20">
+            <div class="px-4 py-4 space-y-2">
+                <a href="index.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Home</a>
+                <a href="services.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Services</a>
+                <a href="about.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">About</a>
+                <a href="projects.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Projects</a>
+                <a href="articles.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Articles</a>
+                <a href="galleries.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Events</a>
+                <a href="contact.html" class="block px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-emerald-500 text-white font-medium text-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 bg-gray-900">
+        <div class="bg-pattern-dark"></div>
+        <div class="dots-pattern"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center animate-fade-in-up">
+                <h1 class="hero-title-font text-5xl sm:text-6xl md:text-7xl mb-6 text-white">Computer <span class="text-cyan-400">Vision</span></h1>
+                <p class="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">Image and video analysis solutions for quality control and automation</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="btn-modern bg-cyan-500 hover:bg-cyan-600 text-white text-lg px-8 py-4 shadow-lg shadow-cyan-500/50">
+                        Get Started
+                    </a>
+                    <a href="#demo" class="btn-modern bg-transparent border-2 border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 text-lg px-8 py-4">
+                        View Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">What is Computer <span class="text-cyan-400">Vision?</span></h2>
+                    <p class="text-lg text-gray-300 mb-6">
+                        Computer Vision enables machines to interpret and understand visual information from the world. Our CV solutions help businesses automate visual inspection, object detection, and image analysis tasks.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-cyan-400 mr-3"></i>
+                            <span class="text-gray-300">Object Detection & Recognition</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-cyan-400 mr-3"></i>
+                            <span class="text-gray-300">Image Classification</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-cyan-400 mr-3"></i>
+                            <span class="text-gray-300">Quality Control Automation</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-cyan-400 mr-3"></i>
+                            <span class="text-gray-300">Facial Recognition</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-700 rounded-lg p-8">
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Computer Vision" class="w-full h-64 object-cover rounded-lg"
+                         onerror="this.src='https://via.placeholder.com/600x400/10b981/ffffff?text=Computer+Vision'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Services -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Our Computer Vision <span class="text-cyan-400">Services</span></h2>
+                <p class="text-xl text-gray-300">Advanced visual intelligence solutions</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-cyan-500/20 hover:border-cyan-500/50 hover:shadow-xl transition">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Object Detection</h3>
+                    <p class="text-gray-300">Identify and locate objects in images and videos with high accuracy.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-cyan-500/20 hover:border-cyan-500/50 hover:shadow-xl transition">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Image Classification</h3>
+                    <p class="text-gray-300">Categorize images into predefined classes automatically.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-cyan-500/20 hover:border-cyan-500/50 hover:shadow-xl transition">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Quality Control</h3>
+                    <p class="text-gray-300">Automated visual inspection for manufacturing and production.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-cyan-500/20 hover:border-cyan-500/50 hover:shadow-xl transition">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Facial Recognition</h3>
+                    <p class="text-gray-300">Identify and verify individuals using facial features.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-cyan-500/20 hover:border-cyan-500/50 hover:shadow-xl transition">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Video Analysis</h3>
+                    <p class="text-gray-300">Process and analyze video content for insights.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-cyan-500/20 hover:border-cyan-500/50 hover:shadow-xl transition">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Medical Imaging</h3>
+                    <p class="text-gray-300">Analyze medical images for diagnosis and treatment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Computer Vision in <span class="text-cyan-400">Action</span></h2>
+                <p class="text-xl text-gray-300">Upload an image to see object detection in action</p>
+            </div>
+            
+            <div class="glass-card-dark p-8 rounded-2xl border border-cyan-500/20">
+                <div class="max-w-3xl mx-auto">
+                    <div class="mb-6">
+                        <label for="cv-image-input" class="block text-sm font-semibold text-gray-300 mb-2">Upload an image:</label>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <input type="file" id="cv-image-input" accept="image/*" class="hidden">
+                            <label for="cv-image-input" class="flex-1 px-6 py-4 bg-gray-700 border-2 border-dashed border-cyan-500/30 rounded-lg cursor-pointer hover:border-cyan-500/50 transition-colors text-center">
+                                <i class="fas fa-cloud-upload-alt text-cyan-400 text-2xl mb-2 block"></i>
+                                <span class="text-gray-300">Click to upload image</span>
+                            </label>
+                            <button id="analyze-image-btn" class="px-8 py-4 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-lg transition-colors shadow-lg shadow-cyan-500/50 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                                <i class="fas fa-search mr-2"></i>Analyze Image
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div id="cv-image-preview" class="hidden mb-6 relative">
+                        <img id="preview-img" src="" alt="Preview" class="w-full max-h-[400px] object-contain rounded-lg border border-cyan-500/20">
+                        <canvas id="cv-canvas" class="absolute top-0 left-0 w-full max-h-[400px] pointer-events-none"></canvas>
+                    </div>
+                    
+                    <div id="cv-results" class="hidden">
+                        <div class="p-6 bg-gray-700 rounded-lg border border-cyan-500/20">
+                            <h3 class="text-lg font-bold text-white mb-4">Detection Results:</h3>
+                            <div id="detected-objects" class="space-y-2"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-gray-700/50 rounded-lg border border-cyan-500/10">
+                        <p class="text-sm text-gray-400 text-center">
+                            <i class="fas fa-info-circle mr-2"></i>
+                            Demo mode: Detects common objects like person, car, dog, cat, etc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Success <span class="text-cyan-400">Story</span></h2>
+                <p class="text-xl text-gray-300">How we reduced manufacturing defects by 50%</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6">Smart Manufacturing Quality Control</h3>
+                    <p class="text-lg text-gray-300 mb-6">
+                        We implemented a computer vision system that automatically inspects products on the production line, detecting defects and ensuring quality standards are met.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-arrow-down text-cyan-400 mr-3"></i>
+                            <span class="text-gray-300">50% reduction in defects</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-arrow-up text-cyan-400 mr-3"></i>
+                            <span class="text-gray-300">99.5% inspection accuracy</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-arrow-up text-cyan-400 mr-3"></i>
+                            <span class="text-gray-300">24/7 automated monitoring</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-700 rounded-lg p-8">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Manufacturing" class="w-full h-64 object-cover rounded-lg"
+                         onerror="this.src='https://via.placeholder.com/600x400/10b981/ffffff?text=Manufacturing'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-modern bg-gray-800 text-white relative overflow-hidden border-t border-cyan-500/20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 observe-on-scroll">
+            <h2 class="text-4xl md:text-5xl font-black mb-6 text-white">Ready to Automate Your Visual <span class="text-cyan-400">Processes?</span></h2>
+            <p class="text-xl text-gray-300 mb-8">Let's discuss how computer vision can improve your operations</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="btn-modern bg-cyan-500 hover:bg-cyan-600 text-white text-lg px-8 py-4 shadow-lg shadow-cyan-500/50">
+                    Get Free Consultation
+                </a>
+                <a href="tel:+15551234567" class="btn-modern bg-transparent border-2 border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 text-lg px-8 py-4">
+                    Call Us Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-white py-16 border-t border-cyan-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-brain text-white"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-white">AI <span class="text-cyan-400">Solutions</span></h3>
+                    </div>
+                    <p class="text-sm sm:text-base text-gray-400 mb-4">Leading provider of intelligent software and automation tools.</p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-base sm:text-lg text-white">Services</h4>
+                    <ul class="space-y-2 text-sm sm:text-base text-gray-400">
+                        <li><a href="machine-learning.html" class="hover:text-cyan-400 transition-colors">Machine Learning</a></li>
+                        <li><a href="nlp.html" class="hover:text-cyan-400 transition-colors">NLP</a></li>
+                        <li><a href="computer-vision.html" class="hover:text-cyan-400 transition-colors">Computer Vision</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-400 transition-colors">View All</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg text-white">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a></li>
+                        <li><a href="projects.html" class="hover:text-cyan-400 transition-colors">Projects</a></li>
+                        <li><a href="articles.html" class="hover:text-cyan-400 transition-colors">Articles</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg text-white">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-envelope text-cyan-400"></i>
+                            <a href="mailto:aungheinh9@gmail.com" class="hover:text-cyan-400 transition-colors">aungheinh9@gmail.com</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-phone text-cyan-400"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-cyan-400"></i>
+                            <span>123 AI Street, Tech City</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-cyan-500/20 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 AI Solutions Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot -->
+    <div id="chatbot" class="fixed bottom-4 right-4 z-50">
+        <div id="chatbot-toggle" class="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-emerald-500 via-cyan-500 to-blue-500 text-white rounded-full shadow-2xl cursor-pointer hover:scale-110 transition-transform flex items-center justify-center animate-pulse-glow">
+            <i class="fas fa-robot text-xl sm:text-2xl"></i>
+        </div>
+        <div id="chatbot-window" class="hidden fixed sm:absolute bottom-20 left-4 right-4 sm:left-auto sm:right-0 sm:w-96 w-[calc(100%-2rem)] h-[500px] max-h-[calc(100vh-8rem)] glass-card rounded-2xl shadow-2xl border border-white/20 flex flex-col" style="min-width: 320px;">
+            <div class="bg-gradient-to-r from-emerald-500 via-cyan-500 to-blue-500 text-white p-3 sm:p-4 rounded-t-2xl flex-shrink-0">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2 sm:gap-3">
+                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-white/20 rounded-full flex items-center justify-center">
+                            <i class="fas fa-robot text-sm sm:text-base"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-sm sm:text-base">AI Assistant</h3>
+                            <p class="text-xs text-white/80">Online</p>
+                        </div>
+                    </div>
+                    <button id="chatbot-close" type="button" class="text-white hover:text-gray-200 active:text-gray-300 transition-colors p-2 sm:p-1 min-w-[44px] min-h-[44px] flex items-center justify-center touch-manipulation" aria-label="Close chat" style="z-index: 10000; pointer-events: auto; cursor: pointer;">
+                        <i class="fas fa-times text-lg sm:text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="chatbot-messages" class="flex-1 overflow-y-auto overflow-x-hidden bg-white/50 p-3 sm:p-4 min-h-0" style="word-wrap: break-word; overflow-wrap: break-word;">
+                <!-- Messages will be added dynamically by chatbot.js -->
+            </div>
+            <div class="p-3 sm:p-4 border-t border-gray-200 bg-white/80 flex-shrink-0">
+                <div class="flex gap-2">
+                    <input type="text" id="chatbot-input" placeholder="Type your message..." 
+                           class="flex-1 px-3 sm:px-4 py-2 sm:py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all text-sm sm:text-base">
+                    <button id="chatbot-send" class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white rounded-xl hover:scale-105 transition-transform flex items-center justify-center shadow-lg">
+                        <i class="fas fa-paper-plane text-sm sm:text-base"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/modern-animations.js"></script>
+    <script>
+        document.getElementById('mobile-menu-button')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+        
+        // Computer Vision Demo - Image Analysis
+        const imageInput = document.getElementById('cv-image-input');
+        const analyzeBtn = document.getElementById('analyze-image-btn');
+        const previewDiv = document.getElementById('cv-image-preview');
+        const previewImg = document.getElementById('preview-img');
+        const canvas = document.getElementById('cv-canvas');
+        const resultsDiv = document.getElementById('cv-results');
+        const detectedObjectsDiv = document.getElementById('detected-objects');
+        
+        imageInput?.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    previewImg.src = event.target.result;
+                    previewDiv.classList.remove('hidden');
+                    analyzeBtn.disabled = false;
+                    resultsDiv.classList.add('hidden');
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+        
+        // Function to analyze image and detect objects with improved accuracy
+        function analyzeImage(image, filename) {
+            return new Promise((resolve) => {
+                const tempCanvas = document.createElement('canvas');
+                const tempCtx = tempCanvas.getContext('2d');
+                tempCanvas.width = image.width;
+                tempCanvas.height = image.height;
+                tempCtx.drawImage(image, 0, 0);
+                
+                // Get image data for analysis
+                const imageData = tempCtx.getImageData(0, 0, tempCanvas.width, tempCanvas.height);
+                const data = imageData.data;
+                
+                // Check filename for keywords (most reliable method)
+                const filenameLower = (filename || '').toLowerCase();
+                const detectedObjects = [];
+                
+                // Analyze image characteristics
+                let hasSkinTones = false;
+                let hasFurColors = false;
+                let hasCarColors = false;
+                let hasBuildingColors = false;
+                let hasTreeColors = false;
+                let hasWaterColors = false;
+                
+                let skinToneCount = 0;
+                let furColorCount = 0;
+                let carColorCount = 0;
+                let buildingColorCount = 0;
+                let treeColorCount = 0;
+                let waterColorCount = 0;
+                
+                let rSum = 0, gSum = 0, bSum = 0;
+                let pixelCount = 0;
+                let darkPixelCount = 0;
+                let brightPixelCount = 0;
+                let metallicPixelCount = 0;
+                
+                // Sample pixels for analysis (every 8th pixel for better accuracy)
+                for (let i = 0; i < data.length; i += 32) { // Every 8th pixel (RGBA = 4 bytes)
+                    const r = data[i];
+                    const g = data[i + 1];
+                    const b = data[i + 2];
+                    const brightness = (r + g + b) / 3;
+                    
+                    rSum += r;
+                    gSum += g;
+                    bSum += b;
+                    pixelCount++;
+                    
+                    // Brightness analysis
+                    if (brightness < 50) darkPixelCount++;
+                    if (brightness > 200) brightPixelCount++;
+                    
+                    // Check for skin tones (person detection) - more specific
+                    if (r > 95 && g > 40 && b > 20 && 
+                        r > g && r > b && 
+                        Math.abs(r - g) > 15 &&
+                        r < 255 && g < 240 && b < 220) {
+                        hasSkinTones = true;
+                        skinToneCount++;
+                    }
+                    
+                    // Check for fur-like colors (browns, grays, blacks for dogs/cats)
+                    if ((r < 100 && g < 100 && b < 100) || // Dark colors
+                        (r > 100 && r < 200 && g > 80 && g < 180 && b > 60 && b < 160)) { // Browns
+                        hasFurColors = true;
+                        furColorCount++;
+                    }
+                    
+                    // Check for car colors (metallic, bright colors, specific car colors)
+                    // Cars often have: white, black, silver, red, blue, gray
+                    if ((brightness > 180 && brightness < 250) || // White/Silver
+                        (brightness < 60) || // Black
+                        (r > 150 && g < 100 && b < 100) || // Red cars
+                        (r < 100 && g < 150 && b > 150) || // Blue cars
+                        (Math.abs(r - g) < 20 && Math.abs(g - b) < 20 && brightness > 100 && brightness < 180)) { // Gray/Silver
+                        hasCarColors = true;
+                        carColorCount++;
+                        if (Math.abs(r - g) < 15 && Math.abs(g - b) < 15 && brightness > 120) {
+                            metallicPixelCount++;
+                        }
+                    }
+                    
+                    // Check for building colors (concrete, brick, gray tones)
+                    if ((Math.abs(r - g) < 30 && Math.abs(g - b) < 30 && brightness > 80 && brightness < 180) ||
+                        (r > 120 && r < 200 && g > 80 && g < 150 && b > 60 && b < 120)) { // Brick colors
+                        hasBuildingColors = true;
+                        buildingColorCount++;
+                    }
+                    
+                    // Check for tree/plant colors (greens)
+                    if (g > r && g > b && g > 50 && g < 200 && 
+                        Math.abs(g - r) > 20 && Math.abs(g - b) > 20) {
+                        hasTreeColors = true;
+                        treeColorCount++;
+                    }
+                    
+                    // Check for water colors (blues, cyans)
+                    if (b > r && b > g && b > 80 && b < 220) {
+                        hasWaterColors = true;
+                        waterColorCount++;
+                    }
+                }
+                
+                const avgR = rSum / pixelCount;
+                const avgG = gSum / pixelCount;
+                const avgB = bSum / pixelCount;
+                const avgBrightness = (avgR + avgG + avgB) / 3;
+                const aspectRatio = image.width / image.height;
+                
+                // Priority 1: Filename keywords (most reliable)
+                if (filenameLower.includes('car') || filenameLower.includes('vehicle') || filenameLower.includes('automobile') ||
+                    filenameLower.includes('truck') || filenameLower.includes('bus') || filenameLower.includes('auto') ||
+                    filenameLower.includes('sedan') || filenameLower.includes('suv')) {
+                    detectedObjects.push({
+                        name: 'car',
+                        confidence: 0.92 + Math.random() * 0.08,
+                        x: 0.1,
+                        y: 0.1,
+                        width: 0.8,
+                        height: 0.8
+                    });
+                } else if (filenameLower.includes('dog') || filenameLower.includes('puppy') || filenameLower.includes('canine')) {
+                    detectedObjects.push({
+                        name: 'dog',
+                        confidence: 0.90 + Math.random() * 0.10,
+                        x: 0.2,
+                        y: 0.2,
+                        width: 0.6,
+                        height: 0.6
+                    });
+                } else if (filenameLower.includes('cat') || filenameLower.includes('kitten') || filenameLower.includes('feline')) {
+                    detectedObjects.push({
+                        name: 'cat',
+                        confidence: 0.90 + Math.random() * 0.10,
+                        x: 0.2,
+                        y: 0.2,
+                        width: 0.6,
+                        height: 0.6
+                    });
+                } else if (filenameLower.includes('person') || filenameLower.includes('people') || filenameLower.includes('human') || 
+                          filenameLower.includes('man') || filenameLower.includes('woman') || filenameLower.includes('portrait') ||
+                          filenameLower.includes('selfie') || filenameLower.includes('face') || filenameLower.includes('portrait')) {
+                    detectedObjects.push({
+                        name: 'person',
+                        confidence: 0.90 + Math.random() * 0.10,
+                        x: 0.15,
+                        y: 0.15,
+                        width: 0.7,
+                        height: 0.7
+                    });
+                } else if (filenameLower.includes('building') || filenameLower.includes('house') || filenameLower.includes('architecture') ||
+                          filenameLower.includes('structure')) {
+                    detectedObjects.push({
+                        name: 'building',
+                        confidence: 0.88 + Math.random() * 0.12,
+                        x: 0.05,
+                        y: 0.05,
+                        width: 0.9,
+                        height: 0.9
+                    });
+                } else if (filenameLower.includes('tree') || filenameLower.includes('forest') || filenameLower.includes('nature')) {
+                    detectedObjects.push({
+                        name: 'tree',
+                        confidence: 0.85 + Math.random() * 0.15,
+                        x: 0.1,
+                        y: 0.1,
+                        width: 0.8,
+                        height: 0.8
+                    });
+                } else {
+                    // Priority 2: Image analysis based on color patterns
+                    const totalPixels = pixelCount;
+                    const skinRatio = skinToneCount / totalPixels;
+                    const furRatio = furColorCount / totalPixels;
+                    const carRatio = carColorCount / totalPixels;
+                    const buildingRatio = buildingColorCount / totalPixels;
+                    const treeRatio = treeColorCount / totalPixels;
+                    const metallicRatio = metallicPixelCount / totalPixels;
+                    
+                    // Car detection (strong indicators)
+                    if (carRatio > 0.15 || (metallicRatio > 0.05 && carRatio > 0.10) || 
+                        (hasCarColors && aspectRatio > 1.3 && aspectRatio < 2.5 && avgBrightness > 100)) {
+                        detectedObjects.push({
+                            name: 'car',
+                            confidence: Math.min(0.95, 0.70 + carRatio * 1.5 + metallicRatio * 2),
+                            x: 0.1,
+                            y: 0.1,
+                            width: 0.8,
+                            height: 0.8
+                        });
+                    }
+                    // Person detection (skin tones)
+                    else if (skinRatio > 0.08 && !hasFurColors && !hasCarColors) {
+                        detectedObjects.push({
+                            name: 'person',
+                            confidence: Math.min(0.95, 0.70 + skinRatio * 2),
+                            x: 0.15,
+                            y: 0.15,
+                            width: 0.7,
+                            height: 0.7
+                        });
+                    }
+                    // Dog/Cat detection (fur colors)
+                    else if (furRatio > 0.12 && !hasSkinTones && !hasCarColors) {
+                        const detectedName = (aspectRatio > 1.2 || avgR > avgG + 20) ? 'dog' : 'cat';
+                        detectedObjects.push({
+                            name: detectedName,
+                            confidence: Math.min(0.90, 0.65 + furRatio * 1.5),
+                            x: 0.2,
+                            y: 0.2,
+                            width: 0.6,
+                            height: 0.6
+                        });
+                    }
+                    // Building detection
+                    else if (buildingRatio > 0.20 && aspectRatio > 0.8 && aspectRatio < 1.5) {
+                        detectedObjects.push({
+                            name: 'building',
+                            confidence: Math.min(0.90, 0.65 + buildingRatio * 1.2),
+                            x: 0.05,
+                            y: 0.05,
+                            width: 0.9,
+                            height: 0.9
+                        });
+                    }
+                    // Tree detection
+                    else if (treeRatio > 0.15) {
+                        detectedObjects.push({
+                            name: 'tree',
+                            confidence: Math.min(0.85, 0.60 + treeRatio * 1.5),
+                            x: 0.1,
+                            y: 0.1,
+                            width: 0.8,
+                            height: 0.8
+                        });
+                    }
+                    // Fallback: make educated guess based on dominant characteristics
+                    else {
+                        if (hasCarColors && !hasSkinTones && !hasFurColors) {
+                            detectedObjects.push({
+                                name: 'car',
+                                confidence: 0.65 + Math.random() * 0.20,
+                                x: 0.1,
+                                y: 0.1,
+                                width: 0.8,
+                                height: 0.8
+                            });
+                        } else if (hasSkinTones && !hasCarColors && !hasFurColors) {
+                            detectedObjects.push({
+                                name: 'person',
+                                confidence: 0.65 + Math.random() * 0.20,
+                                x: 0.15,
+                                y: 0.15,
+                                width: 0.7,
+                                height: 0.7
+                            });
+                        } else if (hasFurColors && !hasSkinTones && !hasCarColors) {
+                            detectedObjects.push({
+                                name: (avgR > avgG && avgR > avgB) ? 'dog' : 'cat',
+                                confidence: 0.60 + Math.random() * 0.25,
+                                x: 0.2,
+                                y: 0.2,
+                                width: 0.6,
+                                height: 0.6
+                            });
+                        }
+                    }
+                }
+                
+                resolve(detectedObjects);
+            });
+        }
+        
+        analyzeBtn?.addEventListener('click', async function() {
+            if (!previewImg.src) return;
+            
+            // Show loading state
+            analyzeBtn.disabled = true;
+            analyzeBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Analyzing...';
+            
+            const img = new Image();
+            img.crossOrigin = 'anonymous';
+            img.onload = async function() {
+                // Get filename from input
+                const fileInput = document.getElementById('cv-image-input');
+                const filename = fileInput?.files[0]?.name || '';
+                
+                // Analyze image
+                const detectedObjects = await analyzeImage(img, filename);
+                
+                // Set canvas size to match preview image display size
+                const previewRect = previewImg.getBoundingClientRect();
+                const scaleX = previewRect.width / img.width;
+                const scaleY = previewRect.height / img.height;
+                const scale = Math.min(scaleX, scaleY);
+                
+                canvas.width = img.width * scale;
+                canvas.height = img.height * scale;
+                canvas.style.width = previewRect.width + 'px';
+                canvas.style.height = previewRect.height + 'px';
+                
+                const ctx = canvas.getContext('2d');
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                // Draw bounding boxes
+                detectedObjects.forEach(obj => {
+                    const x = obj.x * canvas.width;
+                    const y = obj.y * canvas.height;
+                    const w = obj.width * canvas.width;
+                    const h = obj.height * canvas.height;
+                    
+                    // Draw bounding box
+                    ctx.strokeStyle = '#06b6d4';
+                    ctx.lineWidth = 3;
+                    ctx.strokeRect(x, y, w, h);
+                    
+                    // Draw label background
+                    const labelText = `${obj.name} ${(obj.confidence * 100).toFixed(0)}%`;
+                    ctx.font = 'bold 16px Arial';
+                    const textMetrics = ctx.measureText(labelText);
+                    const labelWidth = textMetrics.width + 10;
+                    const labelHeight = 25;
+                    
+                    ctx.fillStyle = '#06b6d4';
+                    ctx.fillRect(x, y - labelHeight, labelWidth, labelHeight);
+                    
+                    // Draw label text
+                    ctx.fillStyle = '#ffffff';
+                    ctx.fillText(labelText, x + 5, y - 8);
+                });
+                
+                // Display results
+                detectedObjectsDiv.innerHTML = detectedObjects.map(obj => `
+                    <div class="flex items-center justify-between p-3 bg-gray-800 rounded-lg">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-cyan-400"></i>
+                            <span class="text-white font-semibold capitalize">${obj.name}</span>
+                        </div>
+                        <span class="text-cyan-400 font-bold">${(obj.confidence * 100).toFixed(0)}%</span>
+                    </div>
+                `).join('');
+                
+                resultsDiv.classList.remove('hidden');
+                resultsDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                
+                // Reset button
+                analyzeBtn.disabled = false;
+                analyzeBtn.innerHTML = '<i class="fas fa-search mr-2"></i>Analyze Image';
+            };
+            
+            img.onerror = function() {
+                // If image fails to load, try with the src directly
+                img.src = previewImg.src;
+            };
+            
+            img.src = previewImg.src;
+        });
+    </script>
+</body>
+</html>

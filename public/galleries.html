@@ -1,0 +1,793 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Galleries - AI Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Raleway:wght@300;400;500;600;700;800;900&family=Oswald:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/modern-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="modern-nav-dark" id="main-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 via-emerald-500 to-blue-500 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/50 animate-pulse-glow">
+                        <i class="fas fa-brain text-white text-xl"></i>
+                    </div>
+                    <a href="index.html" class="text-2xl font-bold text-white">AI <span class="text-cyan-400">Solutions</span></a>
+                </div>
+                <div class="hidden md:flex items-center gap-2">
+                    <a href="index.html" class="nav-link-dark">Home</a>
+                    <a href="services.html" class="nav-link-dark">Services</a>
+                    <a href="about.html" class="nav-link-dark">About</a>
+                    <a href="projects.html" class="nav-link-dark">Projects</a>
+                    <a href="articles.html" class="nav-link-dark">Articles</a>
+                    <a href="galleries.html" class="nav-link-dark active">Events</a>
+                    <a href="contact.html" class="btn-modern bg-cyan-500 hover:bg-cyan-600 text-white ml-4 shadow-lg shadow-cyan-500/50">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-cyan-400 focus:outline-none p-2">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 border-t border-cyan-500/20">
+            <div class="px-4 py-4 space-y-2">
+                <a href="index.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Home</a>
+                <a href="services.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Services</a>
+                <a href="about.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">About</a>
+                <a href="projects.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Projects</a>
+                <a href="articles.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Articles</a>
+                <a href="galleries.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Events</a>
+                <a href="contact.html" class="block px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-emerald-500 text-white font-medium text-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 bg-gray-900">
+        <div class="bg-pattern-dark"></div>
+        <div class="dots-pattern"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center animate-fade-in-up">
+                <h1 class="hero-title-font text-5xl sm:text-6xl md:text-7xl mb-6 text-white">Events & <span class="text-cyan-400">Galleries</span></h1>
+                <p class="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto">Highlights from our events and upcoming conferences</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotional Events -->
+    <section class="section-modern bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 observe-on-scroll">
+                <h2 class="section-title text-white">Promotional <span class="text-cyan-400">Events</span></h2>
+                <p class="section-subtitle text-gray-400">Highlights from our recent events and conferences</p>
+            </div>
+            <div class="relative group overflow-hidden">
+                <!-- Infinite Carousel Container -->
+                <div id="promotional-events-carousel" class="carousel-wrapper">
+                    <!-- First Set of Events -->
+                    <div class="carousel-track">
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="AI Conference 2026" 
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://via.placeholder.com/300x300/10b981/ffffff?text=AI+Conference'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">AI Conference 2026</h4>
+                                <p class="text-sm text-gray-200">March 15-17, 2026</p>
+                                <p class="text-xs text-gray-300 mt-1">San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Tech Expo 2026" 
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://via.placeholder.com/300x300/06b6d4/ffffff?text=Tech+Expo'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">Tech Expo 2026</h4>
+                                <p class="text-sm text-gray-200">February 20-22, 2026</p>
+                                <p class="text-xs text-gray-300 mt-1">Las Vegas, NV</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Machine Learning Summit" 
+                             class="w-full h-64 object-cover "
+                             onerror="this.src='https://via.placeholder.com/300x300/3b82f6/ffffff?text=ML+Summit'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">ML Summit 2026</h4>
+                                <p class="text-sm text-gray-200">January 25-27, 2026</p>
+                                <p class="text-xs text-gray-300 mt-1">Boston, MA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Product Launch Event" 
+                             class="w-full h-64 object-cover "
+                             onerror="this.src='https://via.placeholder.com/300x300/f59e0b/ffffff?text=Product+Launch'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">Product Launch 2026</h4>
+                                <p class="text-sm text-gray-200">December 10, 2025</p>
+                                <p class="text-xs text-gray-300 mt-1">New York, NY</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Deep Learning Workshop" 
+                             class="w-full h-64 object-cover "
+                             onerror="this.src='https://via.placeholder.com/300x300/8b5cf6/ffffff?text=DL+Workshop'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">Deep Learning Workshop</h4>
+                                <p class="text-sm text-gray-200">November 18, 2025</p>
+                                <p class="text-xs text-gray-300 mt-1">Seattle, WA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="NLP Conference" 
+                         class="w-full h-64 object-cover "
+                             onerror="this.src='https://via.placeholder.com/300x300/ec4899/ffffff?text=NLP+Conf'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">NLP Conference 2025</h4>
+                                <p class="text-sm text-gray-200">October 12-14, 2025</p>
+                                <p class="text-xs text-gray-300 mt-1">Austin, TX</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Computer Vision Expo" 
+                             class="w-full h-64 object-cover "
+                             onerror="this.src='https://via.placeholder.com/300x300/14b8a6/ffffff?text=CV+Expo'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">Computer Vision Expo</h4>
+                                <p class="text-sm text-gray-200">September 8-10, 2025</p>
+                                <p class="text-xs text-gray-300 mt-1">Chicago, IL</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="AI Innovation Forum" 
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://via.placeholder.com/300x300/06b6d4/ffffff?text=AI+Forum'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">AI Innovation Forum</h4>
+                                <p class="text-sm text-gray-200">August 22-24, 2025</p>
+                                <p class="text-xs text-gray-300 mt-1">Denver, CO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Data Science Summit" 
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://via.placeholder.com/300x300/10b981/ffffff?text=Data+Science'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">Data Science Summit</h4>
+                                <p class="text-sm text-gray-200">July 15-17, 2025</p>
+                                <p class="text-xs text-gray-300 mt-1">Portland, OR</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Robotics & AI Expo" 
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://via.placeholder.com/300x300/3b82f6/ffffff?text=Robotics'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">Robotics & AI Expo</h4>
+                                <p class="text-sm text-gray-200">June 20-22, 2025</p>
+                                <p class="text-xs text-gray-300 mt-1">Miami, FL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="AI for Business Conference" 
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://via.placeholder.com/300x300/f59e0b/ffffff?text=AI+Business'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">AI for Business 2025</h4>
+                                <p class="text-sm text-gray-200">May 5-7, 2025</p>
+                                <p class="text-xs text-gray-300 mt-1">Atlanta, GA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Neural Networks Workshop" 
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://via.placeholder.com/300x300/8b5cf6/ffffff?text=Neural+Net'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">Neural Networks Workshop</h4>
+                                <p class="text-sm text-gray-200">April 18, 2025</p>
+                                <p class="text-xs text-gray-300 mt-1">Phoenix, AZ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <!-- Duplicate Set for Infinite Loop -->
+                    <div class="carousel-track" aria-hidden="true">
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="AI Conference 2026" 
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://via.placeholder.com/300x300/10b981/ffffff?text=AI+Conference'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">AI Conference 2026</h4>
+                                <p class="text-sm text-gray-200">March 15-17, 2026</p>
+                                <p class="text-xs text-gray-300 mt-1">San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Tech Expo 2026" 
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://via.placeholder.com/300x300/06b6d4/ffffff?text=Tech+Expo'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">Tech Expo 2026</h4>
+                                <p class="text-sm text-gray-200">February 20-22, 2026</p>
+                                <p class="text-xs text-gray-300 mt-1">Las Vegas, NV</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Machine Learning Summit" 
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://via.placeholder.com/300x300/3b82f6/ffffff?text=ML+Summit'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">ML Summit 2026</h4>
+                                <p class="text-sm text-gray-200">January 25-27, 2026</p>
+                                <p class="text-xs text-gray-300 mt-1">Boston, MA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Product Launch Event" 
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://via.placeholder.com/300x300/f59e0b/ffffff?text=Product+Launch'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">Product Launch 2026</h4>
+                                <p class="text-sm text-gray-200">December 10, 2025</p>
+                                <p class="text-xs text-gray-300 mt-1">New York, NY</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Deep Learning Workshop" 
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://via.placeholder.com/300x300/8b5cf6/ffffff?text=DL+Workshop'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">Deep Learning Workshop</h4>
+                                <p class="text-sm text-gray-200">November 18, 2025</p>
+                                <p class="text-xs text-gray-300 mt-1">Seattle, WA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="NLP Conference" 
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://via.placeholder.com/300x300/ec4899/ffffff?text=NLP+Conf'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">NLP Conference 2025</h4>
+                                <p class="text-sm text-gray-200">October 12-14, 2025</p>
+                                <p class="text-xs text-gray-300 mt-1">Austin, TX</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Computer Vision Expo" 
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://via.placeholder.com/300x300/14b8a6/ffffff?text=CV+Expo'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">Computer Vision Expo</h4>
+                                <p class="text-sm text-gray-200">September 8-10, 2025</p>
+                                <p class="text-xs text-gray-300 mt-1">Chicago, IL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="AI Innovation Forum" 
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://via.placeholder.com/300x300/06b6d4/ffffff?text=AI+Forum'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">AI Innovation Forum</h4>
+                                <p class="text-sm text-gray-200">August 22-24, 2025</p>
+                                <p class="text-xs text-gray-300 mt-1">Denver, CO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Data Science Summit" 
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://via.placeholder.com/300x300/10b981/ffffff?text=Data+Science'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">Data Science Summit</h4>
+                                <p class="text-sm text-gray-200">July 15-17, 2025</p>
+                                <p class="text-xs text-gray-300 mt-1">Portland, OR</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Robotics & AI Expo" 
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://via.placeholder.com/300x300/3b82f6/ffffff?text=Robotics'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">Robotics & AI Expo</h4>
+                                <p class="text-sm text-gray-200">June 20-22, 2025</p>
+                                <p class="text-xs text-gray-300 mt-1">Miami, FL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="AI for Business Conference" 
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://via.placeholder.com/300x300/f59e0b/ffffff?text=AI+Business'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">AI for Business 2025</h4>
+                                <p class="text-sm text-gray-200">May 5-7, 2025</p>
+                                <p class="text-xs text-gray-300 mt-1">Atlanta, GA</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="carousel-item relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Neural Networks Workshop" 
+                             class="w-full h-64 object-cover"
+                             onerror="this.src='https://via.placeholder.com/300x300/8b5cf6/ffffff?text=Neural+Net'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <h4 class="font-bold text-lg mb-1">Neural Networks Workshop</h4>
+                                <p class="text-sm text-gray-200">April 18, 2025</p>
+                                <p class="text-xs text-gray-300 mt-1">Phoenix, AZ</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="section-modern bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 observe-on-scroll">
+                <h2 class="section-title text-white">Upcoming <span class="text-cyan-400">Events</span></h2>
+                <p class="section-subtitle text-gray-400">Join us at our upcoming events and conferences</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Event 1 -->
+                <div class="group observe-on-scroll">
+                    <div class="glass-card-dark rounded-2xl overflow-hidden border border-cyan-500/20 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/20 hover:-translate-y-2">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="AI Summit 2026" 
+                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                 onerror="this.src='https://via.placeholder.com/400x300/10b981/ffffff?text=AI+Summit'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-gradient-to-r from-red-500 to-pink-500 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg backdrop-blur-sm border border-white/20">
+                                    <i class="fas fa-fire mr-1"></i>Upcoming
+                                </span>
+                            </div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                                <div class="flex items-center gap-4 mb-2 text-sm">
+                                    <div class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1 rounded-full">
+                                        <i class="fas fa-calendar-alt text-cyan-400"></i>
+                                        <span class="font-semibold">April 20-22, 2026</span>
+                                    </div>
+                                </div>
+                                <h3 class="text-2xl font-black mb-2">AI Summit 2026</h3>
+                                <div class="flex items-center gap-2 text-sm text-gray-200">
+                                    <i class="fas fa-map-marker-alt text-cyan-400"></i>
+                                    <span>Tech City Convention Center</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-300 mb-6 leading-relaxed">Join industry leaders for a comprehensive 3-day conference featuring cutting-edge AI innovations, expert panels, and networking opportunities.</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center gap-4 text-sm text-gray-400">
+                                    <span><i class="fas fa-users text-cyan-400 mr-1"></i>500+</span>
+                                    <span><i class="fas fa-clock text-cyan-400 mr-1"></i>3 Days</span>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="block w-full bg-gradient-to-r from-cyan-500 to-emerald-500 hover:from-cyan-600 hover:to-emerald-600 text-white font-bold py-3 px-6 rounded-xl text-center transition-all shadow-lg shadow-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/60">
+                                <i class="fas fa-ticket-alt mr-2"></i>Register Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="group observe-on-scroll">
+                    <div class="glass-card-dark rounded-2xl overflow-hidden border border-cyan-500/20 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/20 hover:-translate-y-2">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="ML Workshop" 
+                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                 onerror="this.src='https://via.placeholder.com/400x300/06b6d4/ffffff?text=ML+Workshop'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-gradient-to-r from-red-500 to-pink-500 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg backdrop-blur-sm border border-white/20">
+                                    <i class="fas fa-fire mr-1"></i>Upcoming
+                                </span>
+                            </div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                                <div class="flex items-center gap-4 mb-2 text-sm">
+                                    <div class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1 rounded-full">
+                                        <i class="fas fa-calendar-alt text-cyan-400"></i>
+                                        <span class="font-semibold">May 15, 2026</span>
+                                    </div>
+                                </div>
+                                <h3 class="text-2xl font-black mb-2">Machine Learning Workshop</h3>
+                                <div class="flex items-center gap-2 text-sm text-gray-200">
+                                    <i class="fas fa-laptop text-cyan-400"></i>
+                                    <span>Online Event</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-300 mb-6 leading-relaxed">Hands-on workshop covering practical ML applications, model deployment, and best practices for business implementation. Perfect for developers and data scientists.</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center gap-4 text-sm text-gray-400">
+                                    <span><i class="fas fa-users text-cyan-400 mr-1"></i>200+</span>
+                                    <span><i class="fas fa-clock text-cyan-400 mr-1"></i>1 Day</span>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="block w-full bg-gradient-to-r from-cyan-500 to-emerald-500 hover:from-cyan-600 hover:to-emerald-600 text-white font-bold py-3 px-6 rounded-xl text-center transition-all shadow-lg shadow-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/60">
+                                <i class="fas fa-ticket-alt mr-2"></i>Register Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="group observe-on-scroll">
+                    <div class="glass-card-dark rounded-2xl overflow-hidden border border-cyan-500/20 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/20 hover:-translate-y-2">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Innovation Day" 
+                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                 onerror="this.src='https://via.placeholder.com/400x300/3b82f6/ffffff?text=Innovation'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-gradient-to-r from-red-500 to-pink-500 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg backdrop-blur-sm border border-white/20">
+                                    <i class="fas fa-fire mr-1"></i>Upcoming
+                                </span>
+                            </div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                                <div class="flex items-center gap-4 mb-2 text-sm">
+                                    <div class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1 rounded-full">
+                                        <i class="fas fa-calendar-alt text-cyan-400"></i>
+                                        <span class="font-semibold">June 10-12, 2026</span>
+                                    </div>
+                                </div>
+                                <h3 class="text-2xl font-black mb-2">Innovation Day 2026</h3>
+                                <div class="flex items-center gap-2 text-sm text-gray-200">
+                                    <i class="fas fa-map-marker-alt text-cyan-400"></i>
+                                    <span>Silicon Valley</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-300 mb-6 leading-relaxed">Showcase of cutting-edge AI solutions, startup pitches, and networking opportunities with industry experts and investors.</p>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center gap-4 text-sm text-gray-400">
+                                    <span><i class="fas fa-users text-cyan-400 mr-1"></i>300+</span>
+                                    <span><i class="fas fa-clock text-cyan-400 mr-1"></i>3 Days</span>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="block w-full bg-gradient-to-r from-cyan-500 to-emerald-500 hover:from-cyan-600 hover:to-emerald-600 text-white font-bold py-3 px-6 rounded-xl text-center transition-all shadow-lg shadow-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/60">
+                                <i class="fas fa-ticket-alt mr-2"></i>Register Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Events -->
+    <section class="section-modern bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 observe-on-scroll">
+                <h2 class="section-title text-white">Past <span class="text-cyan-400">Events</span></h2>
+                <p class="section-subtitle text-gray-400">Highlights from our previous successful events</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="modern-card-dark group observe-on-scroll overflow-hidden border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="h-48 bg-gradient-to-br from-gray-600 to-gray-800 rounded-xl mb-6 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="AI Solutions Launch 2025" 
+                             class="w-full h-full object-cover opacity-80 "
+                             onerror="this.src='https://via.placeholder.com/400x300/6b7280/ffffff?text=Past+Event'">
+                        <div class="absolute top-4 left-4 bg-gray-700 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            Completed
+                        </div>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-400 mb-3">
+                        <i class="fas fa-calendar-alt mr-2 text-cyan-400"></i>
+                        <span>March 10-12, 2025</span>
+                        <i class="fas fa-users ml-4 mr-2 text-cyan-400"></i>
+                        <span>500+ Attendees</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">AI Solutions Launch 2025</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">Successfully launched our new AI platform with over 500 industry professionals in attendance. Featured keynote speakers from Google and Microsoft.</p>
+                    <div class="flex items-center text-cyan-400 text-sm">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        <span>Event Completed Successfully</span>
+                    </div>
+                </div>
+
+                <div class="modern-card-dark group observe-on-scroll overflow-hidden border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="h-48 bg-gradient-to-br from-gray-600 to-gray-800 rounded-xl mb-6 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="ML Masterclass 2025" 
+                             class="w-full h-full object-cover opacity-80 "
+                             onerror="this.src='https://via.placeholder.com/400x300/6b7280/ffffff?text=Past+Event'">
+                        <div class="absolute top-4 left-4 bg-gray-700 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            Completed
+                        </div>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-400 mb-3">
+                        <i class="fas fa-calendar-alt mr-2 text-cyan-400"></i>
+                        <span>February 5, 2025</span>
+                        <i class="fas fa-users ml-4 mr-2 text-cyan-400"></i>
+                        <span>300+ Attendees</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">Machine Learning Masterclass</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">Intensive one-day workshop on advanced ML techniques. Participants received hands-on training and certification upon completion.</p>
+                    <div class="flex items-center text-cyan-400 text-sm">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        <span>Event Completed Successfully</span>
+                    </div>
+                </div>
+
+                <div class="modern-card-dark group observe-on-scroll overflow-hidden border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="h-48 bg-gradient-to-br from-gray-600 to-gray-800 rounded-xl mb-6 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="AI Innovation Week 2024" 
+                             class="w-full h-full object-cover opacity-80 "
+                             onerror="this.src='https://via.placeholder.com/400x300/6b7280/ffffff?text=Past+Event'">
+                        <div class="absolute top-4 left-4 bg-gray-700 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            Completed
+                        </div>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-400 mb-3">
+                        <i class="fas fa-calendar-alt mr-2 text-cyan-400"></i>
+                        <span>December 15-19, 2024</span>
+                        <i class="fas fa-users ml-4 mr-2 text-cyan-400"></i>
+                        <span>1000+ Attendees</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">AI Innovation Week 2024</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">Week-long celebration of AI innovation featuring 50+ speakers, product demos, and networking events. Our largest event to date!</p>
+                    <div class="flex items-center text-cyan-400 text-sm">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        <span>Event Completed Successfully</span>
+                    </div>
+                </div>
+
+                <div class="modern-card-dark group observe-on-scroll overflow-hidden border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="h-48 bg-gradient-to-br from-gray-600 to-gray-800 rounded-xl mb-6 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="NLP Workshop 2024" 
+                             class="w-full h-full object-cover opacity-80 "
+                             onerror="this.src='https://via.placeholder.com/400x300/6b7280/ffffff?text=Past+Event'">
+                        <div class="absolute top-4 left-4 bg-gray-700 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            Completed
+                        </div>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-400 mb-3">
+                        <i class="fas fa-calendar-alt mr-2 text-cyan-400"></i>
+                        <span>November 8, 2024</span>
+                        <i class="fas fa-users ml-4 mr-2 text-cyan-400"></i>
+                        <span>250+ Attendees</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">NLP Workshop Series 2024</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">Comprehensive workshop on natural language processing covering transformers, BERT, and GPT models. Sold out event with excellent feedback.</p>
+                    <div class="flex items-center text-cyan-400 text-sm">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        <span>Event Completed Successfully</span>
+                    </div>
+                </div>
+
+                <div class="modern-card-dark group observe-on-scroll overflow-hidden border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="h-48 bg-gradient-to-br from-gray-600 to-gray-800 rounded-xl mb-6 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Computer Vision Summit 2024" 
+                             class="w-full h-full object-cover opacity-80 "
+                             onerror="this.src='https://via.placeholder.com/400x300/6b7280/ffffff?text=Past+Event'">
+                        <div class="absolute top-4 left-4 bg-gray-700 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            Completed
+                        </div>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-400 mb-3">
+                        <i class="fas fa-calendar-alt mr-2 text-cyan-400"></i>
+                        <span>October 20-22, 2024</span>
+                        <i class="fas fa-users ml-4 mr-2 text-cyan-400"></i>
+                        <span>600+ Attendees</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">Computer Vision Summit 2024</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">Three-day summit on computer vision technologies featuring live demos, technical sessions, and industry case studies from leading companies.</p>
+                    <div class="flex items-center text-cyan-400 text-sm">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        <span>Event Completed Successfully</span>
+                    </div>
+                </div>
+
+                <div class="modern-card-dark group observe-on-scroll overflow-hidden border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="h-48 bg-gradient-to-br from-gray-600 to-gray-800 rounded-xl mb-6 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="AI Startup Pitch 2024" 
+                             class="w-full h-full object-cover opacity-80 "
+                             onerror="this.src='https://via.placeholder.com/400x300/6b7280/ffffff?text=Past+Event'">
+                        <div class="absolute top-4 left-4 bg-gray-700 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            Completed
+                        </div>
+                    </div>
+                    <div class="flex items-center text-sm text-gray-400 mb-3">
+                        <i class="fas fa-calendar-alt mr-2 text-cyan-400"></i>
+                        <span>September 12, 2024</span>
+                        <i class="fas fa-users ml-4 mr-2 text-cyan-400"></i>
+                        <span>400+ Attendees</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">AI Startup Pitch Competition</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">Competition featuring 20 AI startups pitching to investors. Winners received funding and mentorship opportunities. Great networking event!</p>
+                    <div class="flex items-center text-cyan-400 text-sm">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        <span>Event Completed Successfully</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-white py-16 border-t border-cyan-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-brain text-white"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-white">AI <span class="text-cyan-400">Solutions</span></h3>
+                    </div>
+                    <p class="text-sm sm:text-base text-gray-400 mb-4">Leading provider of intelligent software and automation tools.</p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-base sm:text-lg text-white">Services</h4>
+                    <ul class="space-y-2 text-sm sm:text-base text-gray-400">
+                        <li><a href="machine-learning.html" class="hover:text-cyan-400 transition-colors">Machine Learning</a></li>
+                        <li><a href="nlp.html" class="hover:text-cyan-400 transition-colors">NLP</a></li>
+                        <li><a href="computer-vision.html" class="hover:text-cyan-400 transition-colors">Computer Vision</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-400 transition-colors">View All</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg text-white">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a></li>
+                        <li><a href="projects.html" class="hover:text-cyan-400 transition-colors">Projects</a></li>
+                        <li><a href="articles.html" class="hover:text-cyan-400 transition-colors">Articles</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg text-white">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-envelope text-cyan-400"></i>
+                            <a href="mailto:aungheinh9@gmail.com" class="hover:text-cyan-400 transition-colors">aungheinh9@gmail.com</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-phone text-cyan-400"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-cyan-400"></i>
+                            <span>123 AI Street, Tech City</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-cyan-500/20 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 AI Solutions Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/modern-animations.js"></script>
+    <script>
+        document.getElementById('mobile-menu-button')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Infinite Carousel Animation for promotional events
+        const carousel = document.getElementById('promotional-events-carousel');
+        
+        if (carousel) {
+            // The CSS animation handles the infinite loop automatically
+            // No JavaScript needed for basic infinite carousel
+            
+            // Optional: Pause on hover (already handled by CSS)
+            // Optional: Add click handlers for individual items if needed
+            const carouselItems = carousel.querySelectorAll('.carousel-item');
+            carouselItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    // Add any click functionality here if needed
+                });
+            });
+        }
+    </script>
+</body>
+</html>
+

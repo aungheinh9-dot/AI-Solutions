@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Manufacturing System - AI Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Raleway:wght@300;400;500;600;700;800;900&family=Oswald:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/modern-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="modern-nav-dark" id="main-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 via-emerald-500 to-blue-500 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/50 animate-pulse-glow">
+                        <i class="fas fa-brain text-white text-xl"></i>
+                    </div>
+                    <a href="index.html" class="text-2xl font-bold text-white">AI <span class="text-cyan-400">Solutions</span></a>
+                </div>
+                <div class="hidden md:flex items-center gap-2">
+                    <a href="index.html" class="nav-link-dark">Home</a>
+                    <a href="services.html" class="nav-link-dark">Services</a>
+                    <a href="about.html" class="nav-link-dark">About</a>
+                    <a href="projects.html" class="nav-link-dark active">Projects</a>
+                    <a href="articles.html" class="nav-link-dark">Articles</a>
+                    <a href="galleries.html" class="nav-link-dark">Events</a>
+                    <a href="contact.html" class="btn-modern bg-cyan-500 hover:bg-cyan-600 text-white ml-4 shadow-lg shadow-cyan-500/50">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-cyan-400 focus:outline-none p-2">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 border-t border-cyan-500/20">
+            <div class="px-4 py-4 space-y-2">
+                <a href="index.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Home</a>
+                <a href="services.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Services</a>
+                <a href="about.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">About</a>
+                <a href="projects.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Projects</a>
+                <a href="articles.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Articles</a>
+                <a href="galleries.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Events</a>
+                <a href="contact.html" class="block px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-emerald-500 text-white font-medium text-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 bg-gray-900">
+        <div class="bg-pattern-dark"></div>
+        <div class="dots-pattern"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center animate-fade-in-up">
+                <h1 class="hero-title-font text-5xl sm:text-6xl md:text-7xl mb-6 text-white">Smart Manufacturing <span class="text-cyan-400">System</span></h1>
+                <p class="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">Automated quality control system reducing defects by 50%</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#overview" class="btn-modern bg-cyan-500 hover:bg-cyan-600 text-white text-lg px-8 py-4 shadow-lg shadow-cyan-500/50">
+                        View Case Study
+                    </a>
+                    <a href="contact.html" class="btn-modern bg-transparent border-2 border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 text-lg px-8 py-4">
+                        Get Similar Solution
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Project <span class="text-cyan-400">Overview</span></h2>
+                    <p class="text-lg text-gray-300 mb-6">
+                        We implemented a comprehensive smart manufacturing system that uses computer vision, IoT sensors, and machine learning to automate quality control processes, optimize production efficiency, and reduce manufacturing defects.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span class="text-gray-300">Computer Vision Quality Control</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span class="text-gray-300">IoT Sensor Integration</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span class="text-gray-300">Predictive Maintenance</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            <span class="text-gray-300">Real-time Monitoring</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card-dark p-8 border border-cyan-500/20">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Smart Manufacturing System" class="w-full h-64 object-cover rounded-lg"
+                         onerror="this.src='https://via.placeholder.com/600x400/06b6d4/ffffff?text=Smart+Manufacturing+System'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Key <span class="text-cyan-400">Features</span></h2>
+                <p class="text-xl text-gray-300">Advanced AI capabilities for manufacturing</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-card-dark p-8 border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Visual Quality Control</h3>
+                    <p class="text-gray-300">Automatically detect defects and quality issues using computer vision.</p>
+                </div>
+                
+                <div class="glass-card-dark p-8 border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Predictive Maintenance</h3>
+                    <p class="text-gray-300">Predict equipment failures and schedule maintenance proactively.</p>
+                </div>
+                
+                <div class="glass-card-dark p-8 border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Production Optimization</h3>
+                    <p class="text-gray-300">Optimize production schedules and resource allocation using AI.</p>
+                </div>
+                
+                <div class="glass-card-dark p-8 border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">IoT Integration</h3>
+                    <p class="text-gray-300">Connect and monitor all manufacturing equipment in real-time.</p>
+                </div>
+                
+                <div class="glass-card-dark p-8 border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Anomaly Detection</h3>
+                    <p class="text-gray-300">Identify unusual patterns and potential issues before they escalate.</p>
+                </div>
+                
+                <div class="glass-card-dark p-8 border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Analytics Dashboard</h3>
+                    <p class="text-gray-300">Comprehensive analytics and reporting for manufacturing insights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">System <span class="text-cyan-400">Demo</span></h2>
+                <p class="text-xl text-gray-300">Experience real-time quality control automation</p>
+            </div>
+            
+            <div class="glass-card-dark p-6 sm:p-8 rounded-2xl border border-cyan-500/20">
+                <div class="max-w-5xl mx-auto">
+                    <!-- Production Line Simulation -->
+                    <div class="mb-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold text-white">Production Line Monitoring</h3>
+                            <button id="start-production-btn" class="px-6 py-2 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-lg transition-colors shadow-lg shadow-cyan-500/50">
+                                <i class="fas fa-play mr-2"></i>Start Production
+                            </button>
+                        </div>
+                        
+                        <!-- Production Line Visualization -->
+                        <div class="bg-gray-700 rounded-lg p-6 border border-cyan-500/20 mb-6">
+                            <div id="production-line" class="flex items-center gap-4 overflow-x-auto pb-4" style="min-height: 200px;">
+                                <!-- Products will be added here -->
+                            </div>
+                        </div>
+                        
+                        <!-- Quality Control Status -->
+                        <div id="qc-status" class="hidden grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                            <div class="p-4 bg-gray-700 rounded-lg border border-cyan-500/20">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm text-gray-400">Products Processed</span>
+                                    <span id="products-processed" class="text-2xl font-bold text-cyan-400">0</span>
+                                </div>
+                            </div>
+                            <div class="p-4 bg-gray-700 rounded-lg border border-cyan-500/20">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm text-gray-400">Defects Found</span>
+                                    <span id="defects-found" class="text-2xl font-bold text-red-400">0</span>
+                                </div>
+                            </div>
+                            <div class="p-4 bg-gray-700 rounded-lg border border-cyan-500/20">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-sm text-gray-400">Quality Rate</span>
+                                    <span id="quality-rate" class="text-2xl font-bold text-green-400">100%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Real-time Analysis -->
+                    <div id="manufacturing-results" class="hidden">
+                        <div class="bg-gray-700 rounded-lg p-6 border border-cyan-500/20">
+                            <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                                <i class="fas fa-chart-line text-cyan-400"></i>
+                                Real-time Analysis
+                            </h3>
+                            <div id="analysis-log" class="space-y-2 max-h-64 overflow-y-auto">
+                                <!-- Analysis logs will be added here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Project <span class="text-cyan-400">Results</span></h2>
+                <p class="text-xl text-gray-300">Significant improvements in manufacturing efficiency</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-cyan-500/20 text-center">
+                    <div class="text-4xl font-bold text-cyan-400 mb-2">50%</div>
+                    <div class="text-gray-300">Reduction in Defects</div>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-cyan-500/20 text-center">
+                    <div class="text-4xl font-bold text-cyan-400 mb-2">99.5%</div>
+                    <div class="text-gray-300">Inspection Accuracy</div>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-cyan-500/20 text-center">
+                    <div class="text-4xl font-bold text-cyan-400 mb-2">30%</div>
+                    <div class="text-gray-300">Increase in Efficiency</div>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-cyan-500/20 text-center">
+                    <div class="text-4xl font-bold text-cyan-400 mb-2">24/7</div>
+                    <div class="text-gray-300">Automated Monitoring</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Technology <span class="text-cyan-400">Stack</span></h2>
+                <p class="text-xl text-gray-300">Advanced technologies for smart manufacturing</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-cyan-500 to-emerald-500 text-white p-4 rounded-xl mb-4 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-eye text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-white">Computer Vision</h3>
+                    <p class="text-gray-300 text-sm">OpenCV, TensorFlow</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-cyan-500 to-blue-500 text-white p-4 rounded-xl mb-4 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-wifi text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-white">IoT Platform</h3>
+                    <p class="text-gray-300 text-sm">MQTT, CoAP</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-blue-500 to-cyan-500 text-white p-4 rounded-xl mb-4 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-brain text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-white">Machine Learning</h3>
+                    <p class="text-gray-300 text-sm">PyTorch, Scikit-learn</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-purple-500 to-cyan-500 text-white p-4 rounded-xl mb-4 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-cloud text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-white">Cloud Platform</h3>
+                    <p class="text-gray-300 text-sm">AWS IoT, Azure</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-modern bg-gray-800 text-white relative overflow-hidden border-t border-cyan-500/20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 observe-on-scroll">
+            <h2 class="text-4xl md:text-5xl font-black mb-6 text-white">Ready to Automate Your <span class="text-cyan-400">Manufacturing?</span></h2>
+            <p class="text-xl text-gray-300 mb-8">Let's discuss how we can implement smart manufacturing solutions for your facility</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="btn-modern bg-cyan-500 hover:bg-cyan-600 text-white text-lg px-8 py-4 shadow-lg shadow-cyan-500/50">
+                    Get Free Consultation
+                </a>
+                <a href="tel:+15551234567" class="btn-modern bg-transparent border-2 border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 text-lg px-8 py-4">
+                    Call Us Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-white py-16 border-t border-cyan-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-brain text-white"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-white">AI <span class="text-cyan-400">Solutions</span></h3>
+                    </div>
+                    <p class="text-sm sm:text-base text-gray-400 mb-4">Leading provider of intelligent software and automation tools.</p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-base sm:text-lg text-white">Services</h4>
+                    <ul class="space-y-2 text-sm sm:text-base text-gray-400">
+                        <li><a href="machine-learning.html" class="hover:text-cyan-400 transition-colors">Machine Learning</a></li>
+                        <li><a href="nlp.html" class="hover:text-cyan-400 transition-colors">NLP</a></li>
+                        <li><a href="computer-vision.html" class="hover:text-cyan-400 transition-colors">Computer Vision</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-400 transition-colors">View All</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg text-white">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a></li>
+                        <li><a href="projects.html" class="hover:text-cyan-400 transition-colors">Projects</a></li>
+                        <li><a href="articles.html" class="hover:text-cyan-400 transition-colors">Articles</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg text-white">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-envelope text-cyan-400"></i>
+                            <a href="mailto:aungheinh9@gmail.com" class="hover:text-cyan-400 transition-colors">aungheinh9@gmail.com</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-phone text-cyan-400"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-cyan-400"></i>
+                            <span>123 AI Street, Tech City</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-cyan-500/20 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 AI Solutions Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/modern-animations.js"></script>
+    <script>
+        document.getElementById('mobile-menu-button')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+        
+        // Smart Manufacturing Demo
+        const startProductionBtn = document.getElementById('start-production-btn');
+        const productionLine = document.getElementById('production-line');
+        const qcStatus = document.getElementById('qc-status');
+        const manufacturingResults = document.getElementById('manufacturing-results');
+        const analysisLog = document.getElementById('analysis-log');
+        
+        let productionInterval = null;
+        let productsProcessed = 0;
+        let defectsFound = 0;
+        let isRunning = false;
+        
+        startProductionBtn?.addEventListener('click', function() {
+            const btn = this;
+            
+            if (!isRunning) {
+                isRunning = true;
+                btn.innerHTML = '<i class="fas fa-stop mr-2"></i>Stop Production';
+                btn.classList.remove('bg-cyan-500', 'hover:bg-cyan-600');
+                btn.classList.add('bg-red-500', 'hover:bg-red-600');
+                
+                productionLine.innerHTML = '';
+                qcStatus.classList.remove('hidden');
+                manufacturingResults.classList.remove('hidden');
+                analysisLog.innerHTML = '';
+                productsProcessed = 0;
+                defectsFound = 0;
+                
+                // Start production simulation
+                productionInterval = setInterval(() => {
+                    processProduct();
+                }, 2000);
+            } else {
+                isRunning = false;
+                btn.innerHTML = '<i class="fas fa-play mr-2"></i>Start Production';
+                btn.classList.remove('bg-red-500', 'hover:bg-red-600');
+                btn.classList.add('bg-cyan-500', 'hover:bg-cyan-600');
+                
+                if (productionInterval) {
+                    clearInterval(productionInterval);
+                    productionInterval = null;
+                }
+            }
+        });
+        
+        function processProduct() {
+            productsProcessed++;
+            const hasDefect = Math.random() < 0.15; // 15% defect rate
+            if (hasDefect) defectsFound++;
+            
+            // Create product element
+            const product = document.createElement('div');
+            product.className = `product-item flex flex-col items-center justify-center w-24 h-24 rounded-lg border-2 transition-all ${hasDefect ? 'border-red-500 bg-red-500/10' : 'border-green-500 bg-green-500/10'}`;
+            product.innerHTML = `
+                <i class="fas fa-box text-2xl mb-2 ${hasDefect ? 'text-red-400' : 'text-green-400'}"></i>
+                <span class="text-xs font-semibold ${hasDefect ? 'text-red-400' : 'text-green-400'}">${hasDefect ? 'DEFECT' : 'OK'}</span>
+            `;
+            
+            productionLine.appendChild(product);
+            
+            // Scroll to latest
+            productionLine.scrollLeft = productionLine.scrollWidth;
+            
+            // Add analysis log
+            const logEntry = document.createElement('div');
+            logEntry.className = 'flex items-center gap-3 p-2 bg-gray-800 rounded text-sm';
+            const timestamp = new Date().toLocaleTimeString();
+            logEntry.innerHTML = `
+                <span class="text-gray-500">${timestamp}</span>
+                <i class="fas ${hasDefect ? 'fa-times-circle text-red-400' : 'fa-check-circle text-green-400'}"></i>
+                <span class="text-gray-300">Product #${productsProcessed}: ${hasDefect ? 'Defect detected - Scratches on surface' : 'Quality check passed'}</span>
+            `;
+            analysisLog.insertBefore(logEntry, analysisLog.firstChild);
+            
+            // Update stats
+            document.getElementById('products-processed').textContent = productsProcessed;
+            document.getElementById('defects-found').textContent = defectsFound;
+            const qualityRate = ((productsProcessed - defectsFound) / productsProcessed * 100).toFixed(1);
+            document.getElementById('quality-rate').textContent = qualityRate + '%';
+            
+            // Animate product
+            product.style.opacity = '0';
+            product.style.transform = 'translateX(-20px)';
+            setTimeout(() => {
+                product.style.transition = 'all 0.3s ease';
+                product.style.opacity = '1';
+                product.style.transform = 'translateX(0)';
+            }, 10);
+            
+            // Remove old products (keep last 10)
+            const products = productionLine.querySelectorAll('.product-item');
+            if (products.length > 10) {
+                products[0].remove();
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce AI Assistant - AI Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Raleway:wght@300;400;500;600;700;800;900&family=Oswald:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/modern-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="modern-nav-dark" id="main-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 via-emerald-500 to-blue-500 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/50 animate-pulse-glow">
+                        <i class="fas fa-brain text-white text-xl"></i>
+                    </div>
+                    <a href="index.html" class="text-2xl font-bold text-white">AI <span class="text-cyan-400">Solutions</span></a>
+                </div>
+                <div class="hidden md:flex items-center gap-2">
+                    <a href="index.html" class="nav-link-dark">Home</a>
+                    <a href="services.html" class="nav-link-dark">Services</a>
+                    <a href="about.html" class="nav-link-dark">About</a>
+                    <a href="projects.html" class="nav-link-dark active">Projects</a>
+                    <a href="articles.html" class="nav-link-dark">Articles</a>
+                    <a href="galleries.html" class="nav-link-dark">Events</a>
+                    <a href="contact.html" class="btn-modern bg-cyan-500 hover:bg-cyan-600 text-white ml-4 shadow-lg shadow-cyan-500/50">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-cyan-400 focus:outline-none p-2">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 border-t border-cyan-500/20">
+            <div class="px-4 py-4 space-y-2">
+                <a href="index.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Home</a>
+                <a href="services.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Services</a>
+                <a href="about.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">About</a>
+                <a href="projects.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Projects</a>
+                <a href="articles.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Articles</a>
+                <a href="galleries.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Events</a>
+                <a href="contact.html" class="block px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-emerald-500 text-white font-medium text-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 bg-gray-900">
+        <div class="bg-pattern-dark"></div>
+        <div class="dots-pattern"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center animate-fade-in-up">
+                <h1 class="hero-title-font text-5xl sm:text-6xl md:text-7xl mb-6 text-white">E-commerce AI <span class="text-cyan-400">Assistant</span></h1>
+                <p class="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">Intelligent product recommendation system that increased sales by 35%</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#overview" class="btn-modern bg-cyan-500 hover:bg-cyan-600 text-white text-lg px-8 py-4 shadow-lg shadow-cyan-500/50">
+                        View Case Study
+                    </a>
+                    <a href="contact.html" class="btn-modern bg-transparent border-2 border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 text-lg px-8 py-4">
+                        Get Similar Solution
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section id="overview" class="section-modern bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center observe-on-scroll">
+                <div>
+                    <h2 class="text-4xl font-black text-white mb-6">Project <span class="text-cyan-400">Overview</span></h2>
+                    <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+                        We developed a sophisticated AI-powered recommendation system for a leading e-commerce platform. The system analyzes customer behavior, purchase history, and product preferences to suggest relevant products, resulting in significant sales growth.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/50">
+                                <i class="fas fa-check text-white"></i>
+                            </div>
+                            <span class="text-gray-300 text-lg">Machine Learning Algorithms</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/50">
+                                <i class="fas fa-check text-white"></i>
+                            </div>
+                            <span class="text-gray-300 text-lg">Real-time Data Processing</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/50">
+                                <i class="fas fa-check text-white"></i>
+                            </div>
+                            <span class="text-gray-300 text-lg">Personalized Recommendations</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/50">
+                                <i class="fas fa-check text-white"></i>
+                            </div>
+                            <span class="text-gray-300 text-lg">Scalable Architecture</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card-dark p-8 observe-on-scroll border border-cyan-500/20">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                         alt="E-commerce AI Assistant" class="w-full h-64 object-cover rounded-xl"
+                         onerror="this.src='https://via.placeholder.com/600x400/10b981/ffffff?text=E-commerce+AI+Assistant'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="section-modern bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 observe-on-scroll">
+                <h2 class="section-title text-white">Key <span class="text-cyan-400">Features</span></h2>
+                <p class="section-subtitle text-gray-400">Advanced AI capabilities for e-commerce success</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-card-dark p-8 observe-on-scroll border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Behavioral Analysis</h3>
+                    <p class="text-gray-300 leading-relaxed">Analyze customer browsing patterns and purchase history to understand preferences.</p>
+                </div>
+                
+                <div class="glass-card-dark p-8 observe-on-scroll border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-magic text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Smart Recommendations</h3>
+                    <p class="text-gray-300 leading-relaxed">Generate personalized product suggestions using advanced ML algorithms.</p>
+                </div>
+                
+                <div class="glass-card-dark p-8 observe-on-scroll border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Performance Analytics</h3>
+                    <p class="text-gray-300 leading-relaxed">Track recommendation effectiveness and optimize performance continuously.</p>
+                </div>
+                
+                <div class="glass-card-dark p-8 observe-on-scroll border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-sync text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Real-time Updates</h3>
+                    <p class="text-gray-300 leading-relaxed">Update recommendations instantly based on new customer interactions.</p>
+                </div>
+                
+                <div class="glass-card-dark p-8 observe-on-scroll border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-shield-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Privacy Protection</h3>
+                    <p class="text-gray-300 leading-relaxed">Ensure customer data privacy while providing personalized experiences.</p>
+                </div>
+                
+                <div class="glass-card-dark p-8 observe-on-scroll border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-expand-arrows-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Scalable Design</h3>
+                    <p class="text-gray-300 leading-relaxed">Handle millions of products and customers with high performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="section-modern bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 observe-on-scroll">
+                <h2 class="section-title text-white">Project <span class="text-cyan-400">Demo</span></h2>
+                <p class="section-subtitle text-gray-400">Try our AI product recommendation system</p>
+            </div>
+            
+            <div class="glass-card-dark p-6 sm:p-8 rounded-2xl observe-on-scroll border border-cyan-500/20">
+                <div class="max-w-5xl mx-auto">
+                    <!-- User Input Section -->
+                    <div class="mb-6">
+                        <label for="user-browsing-history" class="block text-sm font-semibold text-gray-300 mb-2">Simulate browsing history (select products you've viewed):</label>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <button class="product-tag px-4 py-2 bg-gray-700 hover:bg-gray-600 text-gray-300 rounded-lg transition-colors text-sm" data-product="laptop">💻 Laptop</button>
+                            <button class="product-tag px-4 py-2 bg-gray-700 hover:bg-gray-600 text-gray-300 rounded-lg transition-colors text-sm" data-product="phone">📱 Smartphone</button>
+                            <button class="product-tag px-4 py-2 bg-gray-700 hover:bg-gray-600 text-gray-300 rounded-lg transition-colors text-sm" data-product="headphones">🎧 Headphones</button>
+                            <button class="product-tag px-4 py-2 bg-gray-700 hover:bg-gray-600 text-gray-300 rounded-lg transition-colors text-sm" data-product="watch">⌚ Smart Watch</button>
+                            <button class="product-tag px-4 py-2 bg-gray-700 hover:bg-gray-600 text-gray-300 rounded-lg transition-colors text-sm" data-product="tablet">📱 Tablet</button>
+                            <button class="product-tag px-4 py-2 bg-gray-700 hover:bg-gray-600 text-gray-300 rounded-lg transition-colors text-sm" data-product="camera">📷 Camera</button>
+                        </div>
+                        <div id="selected-products" class="mb-4 min-h-[40px] flex flex-wrap gap-2"></div>
+                        <button id="generate-recommendations-btn" class="w-full sm:w-auto px-8 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-lg transition-colors shadow-lg shadow-cyan-500/50 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                            <i class="fas fa-magic mr-2"></i>Get AI Recommendations
+                        </button>
+                    </div>
+                    
+                    <!-- Recommendations Display -->
+                    <div id="recommendations-results" class="hidden">
+                        <div class="mb-4 p-4 bg-gray-700 rounded-lg border border-cyan-500/20">
+                            <h3 class="text-lg font-bold text-white mb-2 flex items-center gap-2">
+                                <i class="fas fa-brain text-cyan-400"></i>
+                                AI Analysis
+                            </h3>
+                            <p id="ai-analysis" class="text-sm text-gray-300"></p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h3 class="text-lg font-bold text-white mb-4">Recommended Products for You:</h3>
+                            <div id="recommendations-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                <!-- Recommendations will be added here -->
+                            </div>
+                        </div>
+                        
+                        <div class="p-4 bg-gray-700 rounded-lg border border-cyan-500/20">
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                                <div>
+                                    <div class="text-2xl font-bold text-cyan-400 mb-1" id="recommendation-confidence">0%</div>
+                                    <div class="text-xs text-gray-400">Match Confidence</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-bold text-green-400 mb-1" id="expected-conversion">0%</div>
+                                    <div class="text-xs text-gray-400">Expected Conversion</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-bold text-yellow-400 mb-1" id="personalization-score">0%</div>
+                                    <div class="text-xs text-gray-400">Personalization Score</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Project <span class="text-cyan-400">Results</span></h2>
+                <p class="text-xl text-gray-300">Measurable impact on business performance</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-cyan-500/20 text-center">
+                    <div class="text-4xl font-bold text-cyan-400 mb-2">35%</div>
+                    <div class="text-gray-300">Increase in Sales</div>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-cyan-500/20 text-center">
+                    <div class="text-4xl font-bold text-cyan-400 mb-2">50%</div>
+                    <div class="text-gray-300">Improvement in Engagement</div>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-cyan-500/20 text-center">
+                    <div class="text-4xl font-bold text-cyan-400 mb-2">25%</div>
+                    <div class="text-gray-300">Reduction in Cart Abandonment</div>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-cyan-500/20 text-center">
+                    <div class="text-4xl font-bold text-cyan-400 mb-2">90%</div>
+                    <div class="text-gray-300">Customer Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Technology <span class="text-cyan-400">Stack</span></h2>
+                <p class="text-xl text-gray-300">Cutting-edge technologies used in this project</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-cyan-500 to-emerald-500 text-white p-4 rounded-xl mb-4 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-brain text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-white">Machine Learning</h3>
+                    <p class="text-gray-300 text-sm">TensorFlow, PyTorch</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-cyan-500 to-blue-500 text-white p-4 rounded-xl mb-4 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-database text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-white">Data Processing</h3>
+                    <p class="text-gray-300 text-sm">Apache Spark, Kafka</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-blue-500 to-cyan-500 text-white p-4 rounded-xl mb-4 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-cloud text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-white">Cloud Platform</h3>
+                    <p class="text-gray-300 text-sm">AWS, Docker</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-purple-500 to-cyan-500 text-white p-4 rounded-xl mb-4 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-code text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-white">Backend</h3>
+                    <p class="text-gray-300 text-sm">Python, Node.js</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-modern bg-gray-800 text-white relative overflow-hidden border-t border-cyan-500/20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 observe-on-scroll">
+            <h2 class="text-4xl md:text-5xl font-black mb-6 text-white">Want Similar Results for Your <span class="text-cyan-400">Business?</span></h2>
+            <p class="text-xl text-gray-300 mb-8">Let's discuss how we can implement AI solutions for your e-commerce platform</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="btn-modern bg-cyan-500 hover:bg-cyan-600 text-white text-lg px-8 py-4 shadow-lg shadow-cyan-500/50">
+                    Get Free Consultation
+                </a>
+                <a href="tel:+15551234567" class="btn-modern bg-transparent border-2 border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 text-lg px-8 py-4">
+                    Call Us Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-white py-16 border-t border-cyan-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-brain text-white"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-white">AI <span class="text-cyan-400">Solutions</span></h3>
+                    </div>
+                    <p class="text-sm sm:text-base text-gray-400 mb-4">Leading provider of intelligent software and automation tools.</p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-base sm:text-lg text-white">Services</h4>
+                    <ul class="space-y-2 text-sm sm:text-base text-gray-400">
+                        <li><a href="machine-learning.html" class="hover:text-cyan-400 transition-colors">Machine Learning</a></li>
+                        <li><a href="nlp.html" class="hover:text-cyan-400 transition-colors">NLP</a></li>
+                        <li><a href="computer-vision.html" class="hover:text-cyan-400 transition-colors">Computer Vision</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-400 transition-colors">View All</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg text-white">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a></li>
+                        <li><a href="projects.html" class="hover:text-cyan-400 transition-colors">Projects</a></li>
+                        <li><a href="articles.html" class="hover:text-cyan-400 transition-colors">Articles</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg text-white">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-envelope text-cyan-400"></i>
+                            <a href="mailto:aungheinh9@gmail.com" class="hover:text-cyan-400 transition-colors">aungheinh9@gmail.com</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-phone text-cyan-400"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-cyan-400"></i>
+                            <span>123 AI Street, Tech City</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-cyan-500/20 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 AI Solutions Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/modern-animations.js"></script>
+    <script>
+        document.getElementById('mobile-menu-button')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+        
+        // E-commerce AI Recommendation Demo
+        const selectedProducts = new Set();
+        const productTags = document.querySelectorAll('.product-tag');
+        const selectedProductsDiv = document.getElementById('selected-products');
+        const generateBtn = document.getElementById('generate-recommendations-btn');
+        const resultsDiv = document.getElementById('recommendations-results');
+        
+        const productDatabase = {
+            laptop: {
+                name: 'Gaming Laptop Pro',
+                price: '$1,299',
+                category: 'Electronics',
+                related: ['headphones', 'mouse', 'keyboard', 'monitor']
+            },
+            phone: {
+                name: 'Smartphone X',
+                price: '$899',
+                category: 'Electronics',
+                related: ['case', 'headphones', 'watch', 'charger']
+            },
+            headphones: {
+                name: 'Wireless Headphones',
+                price: '$199',
+                category: 'Audio',
+                related: ['phone', 'laptop', 'tablet', 'speaker']
+            },
+            watch: {
+                name: 'Smart Watch Series 5',
+                price: '$349',
+                category: 'Wearables',
+                related: ['phone', 'fitness', 'charger', 'band']
+            },
+            tablet: {
+                name: 'Tablet Pro 12"',
+                price: '$599',
+                category: 'Electronics',
+                related: ['keyboard', 'stylus', 'case', 'stand']
+            },
+            camera: {
+                name: 'DSLR Camera Kit',
+                price: '$799',
+                category: 'Photography',
+                related: ['lens', 'tripod', 'bag', 'memory']
+            },
+            mouse: {
+                name: 'Wireless Mouse',
+                price: '$49',
+                category: 'Accessories',
+                related: ['laptop', 'keyboard', 'desk']
+            },
+            keyboard: {
+                name: 'Mechanical Keyboard',
+                price: '$129',
+                category: 'Accessories',
+                related: ['laptop', 'mouse', 'desk']
+            },
+            monitor: {
+                name: '4K Monitor 27"',
+                price: '$399',
+                category: 'Displays',
+                related: ['laptop', 'desk', 'stand']
+            },
+            case: {
+                name: 'Phone Case Premium',
+                price: '$29',
+                category: 'Accessories',
+                related: ['phone', 'screen']
+            },
+            charger: {
+                name: 'Fast Wireless Charger',
+                price: '$39',
+                category: 'Accessories',
+                related: ['phone', 'watch', 'tablet']
+            },
+            speaker: {
+                name: 'Bluetooth Speaker',
+                price: '$79',
+                category: 'Audio',
+                related: ['phone', 'tablet', 'headphones']
+            }
+        };
+        
+        productTags.forEach(tag => {
+            tag.addEventListener('click', function() {
+                const product = this.getAttribute('data-product');
+                if (selectedProducts.has(product)) {
+                    selectedProducts.delete(product);
+                    this.classList.remove('bg-cyan-500', 'text-white');
+                    this.classList.add('bg-gray-700', 'text-gray-300');
+                } else {
+                    selectedProducts.add(product);
+                    this.classList.add('bg-cyan-500', 'text-white');
+                    this.classList.remove('bg-gray-700', 'text-gray-300');
+                }
+                updateSelectedProducts();
+            });
+        });
+        
+        function updateSelectedProducts() {
+            selectedProductsDiv.innerHTML = '';
+            if (selectedProducts.size === 0) {
+                selectedProductsDiv.innerHTML = '<p class="text-gray-500 text-sm">No products selected</p>';
+                generateBtn.disabled = true;
+            } else {
+                selectedProducts.forEach(product => {
+                    const chip = document.createElement('span');
+                    chip.className = 'px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-lg text-sm flex items-center gap-2';
+                    chip.innerHTML = `${productDatabase[product]?.name || product} <button class="text-cyan-400 hover:text-cyan-300" onclick="this.parentElement.remove(); selectedProducts.delete('${product}'); updateSelectedProducts();"><i class="fas fa-times text-xs"></i></button>`;
+                    selectedProductsDiv.appendChild(chip);
+                });
+                generateBtn.disabled = false;
+            }
+        }
+        
+        generateBtn?.addEventListener('click', function() {
+            const btn = this;
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Analyzing...';
+            
+            setTimeout(() => {
+                // Generate recommendations based on selected products
+                const recommendations = new Set();
+                selectedProducts.forEach(product => {
+                    const related = productDatabase[product]?.related || [];
+                    related.forEach(rel => {
+                        if (!selectedProducts.has(rel)) {
+                            recommendations.add(rel);
+                        }
+                    });
+                });
+                
+                // Add some popular items if no recommendations
+                if (recommendations.size === 0) {
+                    ['mouse', 'keyboard', 'case', 'charger'].forEach(item => {
+                        if (!selectedProducts.has(item)) {
+                            recommendations.add(item);
+                        }
+                    });
+                }
+                
+                // Generate analysis text
+                const categories = Array.from(selectedProducts).map(p => productDatabase[p]?.category).filter(Boolean);
+                const uniqueCategories = [...new Set(categories)];
+                const analysis = `Based on your browsing history (${Array.from(selectedProducts).map(p => productDatabase[p]?.name || p).join(', ')}), our AI has identified your interest in ${uniqueCategories.join(' and ')} products. Here are personalized recommendations:`;
+                
+                document.getElementById('ai-analysis').textContent = analysis;
+                
+                // Display recommendations
+                const recommendationsGrid = document.getElementById('recommendations-grid');
+                recommendationsGrid.innerHTML = '';
+                
+                Array.from(recommendations).slice(0, 6).forEach((product, index) => {
+                    const productData = productDatabase[product];
+                    if (!productData) return;
+                    
+                    const card = document.createElement('div');
+                    card.className = 'bg-gray-700 rounded-lg p-4 border border-cyan-500/20 hover:border-cyan-500/50 transition-all';
+                    card.style.animationDelay = (index * 100) + 'ms';
+                    card.innerHTML = `
+                        <div class="w-full h-32 bg-gradient-to-br from-cyan-500/20 to-emerald-500/20 rounded-lg mb-3 flex items-center justify-center">
+                            <i class="fas fa-box text-4xl text-cyan-400"></i>
+                        </div>
+                        <h4 class="font-semibold text-white mb-1">${productData.name}</h4>
+                        <p class="text-xs text-gray-400 mb-2">${productData.category}</p>
+                        <p class="text-lg font-bold text-cyan-400 mb-3">${productData.price}</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-500">Match: ${(85 + Math.random() * 10).toFixed(0)}%</span>
+                            <button class="px-3 py-1 bg-cyan-500 hover:bg-cyan-600 text-white text-xs rounded transition-colors">
+                                View
+                            </button>
+                        </div>
+                    `;
+                    recommendationsGrid.appendChild(card);
+                });
+                
+                // Update stats
+                const confidence = 85 + Math.random() * 10;
+                const conversion = 15 + Math.random() * 10;
+                const personalization = 80 + Math.random() * 15;
+                
+                document.getElementById('recommendation-confidence').textContent = confidence.toFixed(0) + '%';
+                document.getElementById('expected-conversion').textContent = conversion.toFixed(1) + '%';
+                document.getElementById('personalization-score').textContent = personalization.toFixed(0) + '%';
+                
+                resultsDiv.classList.remove('hidden');
+                resultsDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fas fa-magic mr-2"></i>Get AI Recommendations';
+            }, 1500);
+        });
+        
+        updateSelectedProducts();
+    </script>
+</body>
+</html>

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbots - AI Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Raleway:wght@300;400;500;600;700;800;900&family=Oswald:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/modern-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="modern-nav-dark" id="main-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 via-emerald-500 to-blue-500 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/50 animate-pulse-glow">
+                        <i class="fas fa-brain text-white text-xl"></i>
+                    </div>
+                    <a href="index.html" class="text-2xl font-bold text-white">AI <span class="text-cyan-400">Solutions</span></a>
+                </div>
+                <div class="hidden md:flex items-center gap-2">
+                    <a href="index.html" class="nav-link-dark">Home</a>
+                    <a href="services.html" class="nav-link-dark active">Services</a>
+                    <a href="about.html" class="nav-link-dark">About</a>
+                    <a href="projects.html" class="nav-link-dark">Projects</a>
+                    <a href="articles.html" class="nav-link-dark">Articles</a>
+                    <a href="galleries.html" class="nav-link-dark">Events</a>
+                    <a href="contact.html" class="btn-modern bg-cyan-500 hover:bg-cyan-600 text-white ml-4 shadow-lg shadow-cyan-500/50">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-cyan-400 focus:outline-none p-2">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 border-t border-cyan-500/20">
+            <div class="px-4 py-4 space-y-2">
+                <a href="index.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Home</a>
+                <a href="services.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Services</a>
+                <a href="about.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">About</a>
+                <a href="projects.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Projects</a>
+                <a href="articles.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Articles</a>
+                <a href="galleries.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Events</a>
+                <a href="contact.html" class="block px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-emerald-500 text-white font-medium text-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 bg-gray-900">
+        <div class="bg-pattern-dark"></div>
+        <div class="dots-pattern"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center animate-fade-in-up">
+                <h1 class="hero-title-font text-5xl sm:text-6xl md:text-7xl mb-6 text-white">AI <span class="text-cyan-400">Chatbots</span></h1>
+                <p class="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">Intelligent customer service solutions that provide 24/7 support</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="btn-modern bg-cyan-500 hover:bg-cyan-600 text-white text-lg px-8 py-4 shadow-lg shadow-cyan-500/50">
+                        Get Started
+                    </a>
+                    <a href="#demo" class="btn-modern bg-transparent border-2 border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 text-lg px-8 py-4">
+                        Try Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">What are AI <span class="text-cyan-400">Chatbots?</span></h2>
+                    <p class="text-lg text-gray-300 mb-6">
+                        AI Chatbots are intelligent conversational agents that can understand natural language and provide automated customer support. Our chatbot solutions help businesses provide instant, accurate responses to customer inquiries 24/7.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-cyan-400 mr-3"></i>
+                            <span class="text-gray-300">24/7 Customer Support</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-cyan-400 mr-3"></i>
+                            <span class="text-gray-300">Natural Language Understanding</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-cyan-400 mr-3"></i>
+                            <span class="text-gray-300">Multi-language Support</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-cyan-400 mr-3"></i>
+                            <span class="text-gray-300">Seamless Human Handoff</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card-dark p-8 border border-cyan-500/20">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                         alt="AI Chatbots" class="w-full h-64 object-cover rounded-lg"
+                         onerror="this.src='https://via.placeholder.com/600x400/10b981/ffffff?text=AI+Chatbots'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot Services -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Our Chatbot <span class="text-cyan-400">Solutions</span></h2>
+                <p class="text-xl text-gray-300">Intelligent conversational AI for your business</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-card-dark p-8 border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Customer Support</h3>
+                    <p class="text-gray-300">Handle common customer inquiries and provide instant support.</p>
+                </div>
+                
+                <div class="glass-card-dark p-8 border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">E-commerce Assistant</h3>
+                    <p class="text-gray-300">Help customers find products and complete purchases.</p>
+                </div>
+                
+                <div class="glass-card-dark p-8 border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Appointment Booking</h3>
+                    <p class="text-gray-300">Automate scheduling and appointment management.</p>
+                </div>
+                
+                <div class="glass-card-dark p-8 border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">FAQ Assistant</h3>
+                    <p class="text-gray-300">Answer frequently asked questions instantly.</p>
+                </div>
+                
+                <div class="glass-card-dark p-8 border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Lead Generation</h3>
+                    <p class="text-gray-300">Qualify leads and collect customer information.</p>
+                </div>
+                
+                <div class="glass-card-dark p-8 border border-cyan-500/20 hover:border-cyan-500/50">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Training Assistant</h3>
+                    <p class="text-gray-300">Provide interactive training and onboarding support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Chatbot in <span class="text-cyan-400">Action</span></h2>
+                <p class="text-xl text-gray-300">Try our AI chatbot - Ask questions and get instant responses</p>
+            </div>
+            
+            <div class="glass-card-dark p-6 sm:p-8 rounded-2xl border border-cyan-500/20">
+                <div class="max-w-4xl mx-auto">
+                    <!-- Chatbot Demo Interface -->
+                    <div class="bg-gray-700 rounded-xl overflow-hidden border border-cyan-500/20" style="height: 500px; display: flex; flex-direction: column;">
+                        <!-- Chat Header -->
+                        <div class="bg-gradient-to-r from-cyan-500 via-emerald-500 to-blue-500 text-white p-4 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold">AI Assistant</h3>
+                                    <p class="text-xs text-white/80">Online • Ready to help</p>
+                                </div>
+                            </div>
+                            <button id="clear-chat-btn" class="text-white/80 hover:text-white transition-colors" title="Clear chat">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                        </div>
+                        
+                        <!-- Messages Area -->
+                        <div id="demo-chat-messages" class="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-800">
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-robot text-white text-sm"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="bg-gray-700 rounded-lg p-3 text-gray-200">
+                                        <p>Hello! I'm an AI assistant. I can help you with:</p>
+                                        <ul class="list-disc list-inside mt-2 space-y-1 text-sm">
+                                            <li>Answering questions about our services</li>
+                                            <li>Providing information about AI solutions</li>
+                                            <li>Helping with general inquiries</li>
+                                        </ul>
+                                        <p class="mt-2 text-sm text-cyan-400">Try asking: "What services do you offer?" or "Tell me about AI chatbots"</p>
+                                    </div>
+                                    <span class="text-xs text-gray-500 mt-1 block">Just now</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Input Area -->
+                        <div class="p-4 border-t border-cyan-500/20 bg-gray-700">
+                            <div class="flex gap-2">
+                                <input type="text" id="demo-chat-input" 
+                                       placeholder="Type your message here..." 
+                                       class="flex-1 px-4 py-3 rounded-lg border border-cyan-500/30 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all placeholder-gray-400">
+                                <button id="demo-chat-send" class="px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-lg transition-colors shadow-lg shadow-cyan-500/50">
+                                    <i class="fas fa-paper-plane mr-2"></i>Send
+                                </button>
+                            </div>
+                            <p class="text-xs text-gray-400 mt-2 text-center">
+                                <i class="fas fa-info-circle mr-1"></i>
+                                Demo mode: Responses are simulated for demonstration purposes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Success <span class="text-cyan-400">Story</span></h2>
+                <p class="text-xl text-gray-300">How we reduced support tickets by 60% for a tech company</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6">Intelligent Support Chatbot</h3>
+                    <p class="text-lg text-gray-300 mb-6">
+                        We developed a sophisticated AI chatbot that handles customer inquiries, troubleshoots technical issues, and escalates complex problems to human agents when needed.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-arrow-down text-cyan-400 mr-3"></i>
+                            <span class="text-gray-300">60% reduction in support tickets</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-arrow-up text-cyan-400 mr-3"></i>
+                            <span class="text-gray-300">85% customer satisfaction rate</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-arrow-up text-cyan-400 mr-3"></i>
+                            <span class="text-gray-300">24/7 support availability</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card-dark p-8 border border-cyan-500/20">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Customer Support" class="w-full h-64 object-cover rounded-lg"
+                         onerror="this.src='https://via.placeholder.com/600x400/10b981/ffffff?text=Customer+Support'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-modern bg-gray-800 text-white relative overflow-hidden border-t border-cyan-500/20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 observe-on-scroll">
+            <h2 class="text-4xl md:text-5xl font-black mb-6 text-white">Ready to Automate Your Customer <span class="text-cyan-400">Support?</span></h2>
+            <p class="text-xl text-gray-300 mb-8">Let's discuss how AI chatbots can improve your customer experience</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="btn-modern bg-cyan-500 hover:bg-cyan-600 text-white text-lg px-8 py-4 shadow-lg shadow-cyan-500/50">
+                    Get Free Consultation
+                </a>
+                <a href="tel:+15551234567" class="btn-modern bg-transparent border-2 border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 text-lg px-8 py-4">
+                    Call Us Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-white py-16 border-t border-cyan-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-brain text-white"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-white">AI <span class="text-cyan-400">Solutions</span></h3>
+                    </div>
+                    <p class="text-sm sm:text-base text-gray-400 mb-4">Leading provider of intelligent software and automation tools.</p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-base sm:text-lg text-white">Services</h4>
+                    <ul class="space-y-2 text-sm sm:text-base text-gray-400">
+                        <li><a href="machine-learning.html" class="hover:text-cyan-400 transition-colors">Machine Learning</a></li>
+                        <li><a href="nlp.html" class="hover:text-cyan-400 transition-colors">NLP</a></li>
+                        <li><a href="computer-vision.html" class="hover:text-cyan-400 transition-colors">Computer Vision</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-400 transition-colors">View All</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg text-white">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a></li>
+                        <li><a href="projects.html" class="hover:text-cyan-400 transition-colors">Projects</a></li>
+                        <li><a href="articles.html" class="hover:text-cyan-400 transition-colors">Articles</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg text-white">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-envelope text-cyan-400"></i>
+                            <a href="mailto:aungheinh9@gmail.com" class="hover:text-emerald-400 transition-colors">aungheinh9@gmail.com</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-phone text-emerald-400"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-emerald-400"></i>
+                            <span>123 AI Street, Tech City</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-cyan-500/20 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 AI Solutions Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot -->
+    <div id="chatbot" class="fixed bottom-4 right-4 z-50">
+        <div id="chatbot-toggle" class="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-emerald-500 via-cyan-500 to-blue-500 text-white rounded-full shadow-2xl cursor-pointer hover:scale-110 transition-transform flex items-center justify-center animate-pulse-glow">
+            <i class="fas fa-robot text-xl sm:text-2xl"></i>
+        </div>
+        <div id="chatbot-window" class="hidden fixed sm:absolute bottom-20 left-4 right-4 sm:left-auto sm:right-0 sm:w-96 w-[calc(100%-2rem)] h-[500px] max-h-[calc(100vh-8rem)] glass-card rounded-2xl shadow-2xl border border-white/20 flex flex-col" style="min-width: 320px;">
+            <div class="bg-gradient-to-r from-emerald-500 via-cyan-500 to-blue-500 text-white p-3 sm:p-4 rounded-t-2xl flex-shrink-0">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2 sm:gap-3">
+                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-white/20 rounded-full flex items-center justify-center">
+                            <i class="fas fa-robot text-sm sm:text-base"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-sm sm:text-base">AI Assistant</h3>
+                            <p class="text-xs text-white/80">Online</p>
+                        </div>
+                    </div>
+                    <button id="chatbot-close" type="button" class="text-white hover:text-gray-200 active:text-gray-300 transition-colors p-2 sm:p-1 min-w-[44px] min-h-[44px] flex items-center justify-center touch-manipulation" aria-label="Close chat" style="z-index: 10000; pointer-events: auto; cursor: pointer;">
+                        <i class="fas fa-times text-lg sm:text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="chatbot-messages" class="flex-1 overflow-y-auto overflow-x-hidden bg-white/50 p-3 sm:p-4 min-h-0" style="word-wrap: break-word; overflow-wrap: break-word;">
+                <!-- Messages will be added dynamically by chatbot.js -->
+            </div>
+            <div class="p-3 sm:p-4 border-t border-gray-200 bg-white/80 flex-shrink-0">
+                <div class="flex gap-2">
+                    <input type="text" id="chatbot-input" placeholder="Type your message..." 
+                           class="flex-1 px-3 sm:px-4 py-2 sm:py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all text-sm sm:text-base">
+                    <button id="chatbot-send" class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white rounded-xl hover:scale-105 transition-transform flex items-center justify-center shadow-lg">
+                        <i class="fas fa-paper-plane text-sm sm:text-base"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/modern-animations.js"></script>
+    <script>
+        // AI Chatbot Demo
+        const demoChatInput = document.getElementById('demo-chat-input');
+        const demoChatSend = document.getElementById('demo-chat-send');
+        const demoChatMessages = document.getElementById('demo-chat-messages');
+        const clearChatBtn = document.getElementById('clear-chat-btn');
+        
+        // Knowledge base for chatbot responses
+        const chatbotKnowledge = {
+            greetings: [
+                "Hello! How can I assist you today?",
+                "Hi there! I'm here to help. What would you like to know?",
+                "Greetings! I'm your AI assistant. How can I help you?"
+            ],
+            services: [
+                "We offer a wide range of AI services including Machine Learning, Natural Language Processing, Computer Vision, Predictive Analytics, Process Automation, and AI Chatbots. Each service is designed to help businesses automate processes and gain valuable insights.",
+                "Our services include: Machine Learning solutions for data analysis, NLP for text understanding, Computer Vision for image analysis, Predictive Analytics for forecasting, Process Automation for workflow optimization, and AI Chatbots for customer support.",
+                "We provide comprehensive AI solutions: ML algorithms, NLP for language processing, Computer Vision for visual analysis, Predictive Analytics for trend forecasting, Automation tools, and intelligent Chatbots for 24/7 customer service."
+            ],
+            chatbots: [
+                "AI Chatbots are intelligent conversational agents that can understand natural language and provide automated customer support 24/7. They can handle customer inquiries, answer FAQs, assist with purchases, and escalate complex issues to human agents when needed.",
+                "Our AI chatbots use advanced NLP technology to understand customer queries and provide accurate, helpful responses. They can be integrated into websites, messaging platforms, and mobile apps to provide instant support.",
+                "AI Chatbots help businesses provide instant customer support, reduce response times, handle multiple conversations simultaneously, and improve customer satisfaction. They can be customized for your specific business needs."
+            ],
+            pricing: [
+                "Our pricing is customized based on your specific needs and requirements. We offer flexible packages for different business sizes. Would you like to schedule a consultation to discuss your needs?",
+                "Pricing varies depending on the scope of your project and the services you need. We provide transparent quotes after understanding your requirements. Contact us for a free consultation!",
+                "We offer competitive pricing tailored to your business needs. Let's discuss your project requirements and I can connect you with our team for a detailed quote."
+            ],
+            contact: [
+                "You can reach us at aungheinh9@gmail.com or call us at +1 (555) 123-4567. We're also available for consultations - just fill out the contact form on our website!",
+                "Contact us via email at aungheinh9@gmail.com or phone at +1 (555) 123-4567. We'd love to hear from you and discuss how we can help your business.",
+                "Get in touch with us at aungheinh9@gmail.com or +1 (555) 123-4567. You can also visit our contact page to send us a message directly."
+            ],
+            default: [
+                "That's an interesting question! Let me help you with that. Could you provide a bit more detail?",
+                "I understand you're asking about that. While I'm a demo chatbot, our team would be happy to provide more detailed information. Would you like to contact us?",
+                "Thanks for your question! For more specific information, I'd recommend reaching out to our team. They can provide detailed answers tailored to your needs."
+            ]
+        };
+        
+        function getChatbotResponse(userMessage) {
+            const message = userMessage.toLowerCase().trim();
+            
+            if (message.match(/\b(hi|hello|hey|greetings|good morning|good afternoon|good evening)\b/)) {
+                return chatbotKnowledge.greetings[Math.floor(Math.random() * chatbotKnowledge.greetings.length)];
+            }
+            if (message.match(/\b(service|services|what do you offer|what can you do|capabilities|offerings)\b/)) {
+                return chatbotKnowledge.services[Math.floor(Math.random() * chatbotKnowledge.services.length)];
+            }
+            if (message.match(/\b(chatbot|chat bot|ai chatbot|what is a chatbot|how do chatbots work)\b/)) {
+                return chatbotKnowledge.chatbots[Math.floor(Math.random() * chatbotKnowledge.chatbots.length)];
+            }
+            if (message.match(/\b(price|pricing|cost|how much|fee|prices)\b/)) {
+                return chatbotKnowledge.pricing[Math.floor(Math.random() * chatbotKnowledge.pricing.length)];
+            }
+            if (message.match(/\b(contact|email|phone|reach|get in touch|address|location)\b/)) {
+                return chatbotKnowledge.contact[Math.floor(Math.random() * chatbotKnowledge.contact.length)];
+            }
+            if (message.match(/\b(machine learning|ml|ai|artificial intelligence|algorithm)\b/)) {
+                return "Machine Learning is a subset of AI that enables computers to learn from data without explicit programming. Our ML solutions help businesses automate processes, predict outcomes, and gain valuable insights from their data.";
+            }
+            if (message.match(/\b(nlp|natural language|text analysis|language processing)\b/)) {
+                return "Natural Language Processing (NLP) enables computers to understand, interpret, and generate human language. Our NLP solutions help with text analysis, sentiment analysis, language translation, and automated customer service.";
+            }
+            if (message.match(/\b(computer vision|cv|image|visual|detection|recognition)\b/)) {
+                return "Computer Vision enables machines to interpret and understand visual information. Our CV solutions help with object detection, image analysis, quality control, and automated visual inspection.";
+            }
+            return chatbotKnowledge.default[Math.floor(Math.random() * chatbotKnowledge.default.length)];
+        }
+        
+        function addMessage(message, isUser = false) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `flex items-start gap-3 ${isUser ? 'flex-row-reverse' : ''}`;
+            const timestamp = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            messageDiv.innerHTML = `
+                <div class="w-8 h-8 ${isUser ? 'bg-cyan-500' : 'bg-gradient-to-br from-cyan-500 to-emerald-500'} rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas ${isUser ? 'fa-user' : 'fa-robot'} text-white text-sm"></i>
+                </div>
+                <div class="flex-1 ${isUser ? 'text-right' : ''}">
+                    <div class="bg-${isUser ? 'cyan-500' : 'gray-700'} rounded-lg p-3 text-${isUser ? 'white' : 'gray-200'} inline-block ${isUser ? 'ml-auto' : ''}">
+                        <p>${message}</p>
+                    </div>
+                    <span class="text-xs text-gray-500 mt-1 block">${timestamp}</span>
+                </div>
+            `;
+            demoChatMessages.appendChild(messageDiv);
+            demoChatMessages.scrollTop = demoChatMessages.scrollHeight;
+        }
+        
+        function sendMessage() {
+            const message = demoChatInput.value.trim();
+            if (!message) return;
+            addMessage(message, true);
+            demoChatInput.value = '';
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'flex items-start gap-3';
+            typingDiv.innerHTML = `
+                <div class="w-8 h-8 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-robot text-white text-sm"></i>
+                </div>
+                <div class="flex-1">
+                    <div class="bg-gray-700 rounded-lg p-3 text-gray-200">
+                        <div class="flex gap-1">
+                            <div class="w-2 h-2 bg-cyan-400 rounded-full animate-bounce" style="animation-delay: 0s"></div>
+                            <div class="w-2 h-2 bg-cyan-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                            <div class="w-2 h-2 bg-cyan-400 rounded-full animate-bounce" style="animation-delay: 0.4s"></div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            demoChatMessages.appendChild(typingDiv);
+            demoChatMessages.scrollTop = demoChatMessages.scrollHeight;
+            setTimeout(() => {
+                typingDiv.remove();
+                const response = getChatbotResponse(message);
+                addMessage(response, false);
+            }, 1000 + Math.random() * 1000);
+        }
+        
+        demoChatSend?.addEventListener('click', sendMessage);
+        demoChatInput?.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') sendMessage();
+        });
+        clearChatBtn?.addEventListener('click', function() {
+            if (confirm('Are you sure you want to clear the chat?')) {
+                demoChatMessages.innerHTML = `
+                    <div class="flex items-start gap-3">
+                        <div class="w-8 h-8 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-robot text-white text-sm"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="bg-gray-700 rounded-lg p-3 text-gray-200">
+                                <p>Chat cleared! How can I help you today?</p>
+                            </div>
+                            <span class="text-xs text-gray-500 mt-1 block">Just now</span>
+                        </div>
+                    </div>
+                `;
+            }
+        });
+    </script>
+    <script>
+        document.getElementById('mobile-menu-button')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

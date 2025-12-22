@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Analytics Platform - AI Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Raleway:wght@300;400;500;600;700;800;900&family=Oswald:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/modern-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="modern-nav-dark" id="main-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 via-emerald-500 to-blue-500 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/50 animate-pulse-glow">
+                        <i class="fas fa-brain text-white text-xl"></i>
+                    </div>
+                    <a href="index.html" class="text-2xl font-bold text-white">AI <span class="text-cyan-400">Solutions</span></a>
+                </div>
+                <div class="hidden md:flex items-center gap-2">
+                    <a href="index.html" class="nav-link-dark">Home</a>
+                    <a href="services.html" class="nav-link-dark">Services</a>
+                    <a href="about.html" class="nav-link-dark">About</a>
+                    <a href="projects.html" class="nav-link-dark active">Projects</a>
+                    <a href="articles.html" class="nav-link-dark">Articles</a>
+                    <a href="galleries.html" class="nav-link-dark">Events</a>
+                    <a href="contact.html" class="btn-modern bg-cyan-500 hover:bg-cyan-600 text-white ml-4 shadow-lg shadow-cyan-500/50">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-cyan-400 focus:outline-none p-2">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 border-t border-cyan-500/20">
+            <div class="px-4 py-4 space-y-2">
+                <a href="index.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Home</a>
+                <a href="services.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Services</a>
+                <a href="about.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">About</a>
+                <a href="projects.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Projects</a>
+                <a href="articles.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Articles</a>
+                <a href="galleries.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Events</a>
+                <a href="contact.html" class="block px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-emerald-500 text-white font-medium text-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 bg-gray-900">
+        <div class="bg-pattern-dark"></div>
+        <div class="dots-pattern"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center animate-fade-in-up">
+                <h1 class="hero-title-font text-5xl sm:text-6xl md:text-7xl mb-6 text-white">Healthcare Analytics <span class="text-cyan-400">Platform</span></h1>
+                <p class="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">AI-powered diagnostic tool for early disease detection</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#overview" class="btn-modern bg-cyan-500 hover:bg-cyan-600 text-white text-lg px-8 py-4 shadow-lg shadow-cyan-500/50">
+                        View Case Study
+                    </a>
+                    <a href="contact.html" class="btn-modern bg-transparent border-2 border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 text-lg px-8 py-4">
+                        Get Similar Solution
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Project <span class="text-cyan-400">Overview</span></h2>
+                    <p class="text-lg text-gray-300 mb-6">
+                        We developed a comprehensive healthcare analytics platform that uses AI to analyze medical images, patient data, and clinical records to assist healthcare professionals in early disease detection and treatment planning.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-cyan-400 mr-3"></i>
+                            <span class="text-gray-300">Computer Vision for Medical Imaging</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-cyan-400 mr-3"></i>
+                            <span class="text-gray-300">Predictive Analytics</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-cyan-400 mr-3"></i>
+                            <span class="text-gray-300">HIPAA Compliant</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-cyan-400 mr-3"></i>
+                            <span class="text-gray-300">Real-time Processing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-700 rounded-lg p-8">
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                         onerror="this.src='https://via.placeholder.com/600x400/10b981/ffffff?text=Healthcare+Analytics+Platform'" 
+                         alt="Healthcare Analytics Platform" class="w-full h-64 object-cover rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Key Features</h2>
+                <p class="text-xl text-gray-300">Advanced AI capabilities for healthcare</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-card-dark p-8 rounded-lg shadow-lg hover:shadow-xl transition border border-cyan-500/20">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Medical Image Analysis</h3>
+                    <p class="text-gray-300">Analyze X-rays, CT scans, and MRIs for early disease detection.</p>
+                </div>
+                
+                <div class="glass-card-dark p-8 rounded-lg shadow-lg hover:shadow-xl transition border border-cyan-500/20">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Predictive Modeling</h3>
+                    <p class="text-gray-300">Predict patient outcomes and treatment responses using ML algorithms.</p>
+                </div>
+                
+                <div class="glass-card-dark p-8 rounded-lg shadow-lg hover:shadow-xl transition border border-cyan-500/20">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Clinical Decision Support</h3>
+                    <p class="text-gray-300">Provide evidence-based recommendations to healthcare professionals.</p>
+                </div>
+                
+                <div class="glass-card-dark p-8 rounded-lg shadow-lg hover:shadow-xl transition border border-cyan-500/20">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Data Security</h3>
+                    <p class="text-gray-300">Ensure patient data privacy with advanced security measures.</p>
+                </div>
+                
+                <div class="glass-card-dark p-8 rounded-lg shadow-lg hover:shadow-xl transition border border-cyan-500/20">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Real-time Monitoring</h3>
+                    <p class="text-gray-300">Monitor patient vitals and alert for critical changes.</p>
+                </div>
+                
+                <div class="glass-card-dark p-8 rounded-lg shadow-lg hover:shadow-xl transition border border-cyan-500/20">
+                    <div class="text-cyan-400 text-4xl mb-4">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Electronic Health Records</h3>
+                    <p class="text-gray-300">Integrate with existing EHR systems for seamless workflow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Platform <span class="text-cyan-400">Demo</span></h2>
+                <p class="text-xl text-gray-300">Try our medical image analysis AI</p>
+            </div>
+            
+            <div class="glass-card-dark p-6 sm:p-8 rounded-2xl border border-cyan-500/20">
+                <div class="max-w-5xl mx-auto">
+                    <!-- Patient Data Input -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="patient-age" class="block text-sm font-semibold text-gray-300 mb-2">Patient Age:</label>
+                            <input type="number" id="patient-age" value="45" min="18" max="100"
+                                   class="w-full px-4 py-3 rounded-lg border border-cyan-500/30 bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all">
+                        </div>
+                        <div>
+                            <label for="scan-type" class="block text-sm font-semibold text-gray-300 mb-2">Scan Type:</label>
+                            <select id="scan-type" class="w-full px-4 py-3 rounded-lg border border-cyan-500/30 bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all">
+                                <option value="xray">X-Ray</option>
+                                <option value="ct">CT Scan</option>
+                                <option value="mri">MRI</option>
+                                <option value="ultrasound">Ultrasound</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <button id="analyze-scan-btn" class="w-full sm:w-auto px-8 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-lg transition-colors shadow-lg shadow-cyan-500/50">
+                            <i class="fas fa-stethoscope mr-2"></i>Analyze Medical Scan
+                        </button>
+                    </div>
+                    
+                    <!-- Analysis Results -->
+                    <div id="healthcare-results" class="hidden">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                            <!-- Scan Preview -->
+                            <div class="bg-gray-700 rounded-lg p-6 border border-cyan-500/20">
+                                <h3 class="text-lg font-bold text-white mb-4">Medical Scan</h3>
+                                <div class="bg-gray-800 rounded-lg p-8 flex items-center justify-center min-h-[300px] relative">
+                                    <canvas id="scan-canvas" class="w-full h-full"></canvas>
+                                    <div id="scan-overlay" class="absolute inset-0 pointer-events-none"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Analysis Results -->
+                            <div class="space-y-4">
+                                <div class="bg-gray-700 rounded-lg p-6 border border-cyan-500/20">
+                                    <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                                        <i class="fas fa-brain text-cyan-400"></i>
+                                        AI Analysis Results
+                                    </h3>
+                                    <div id="analysis-details" class="space-y-3">
+                                        <!-- Analysis details will be added here -->
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-gray-700 rounded-lg p-6 border border-cyan-500/20">
+                                    <h3 class="text-lg font-bold text-white mb-4">Risk Assessment</h3>
+                                    <div id="risk-assessment" class="space-y-2">
+                                        <!-- Risk assessment will be added here -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Statistics -->
+                        <div class="grid grid-cols-1 sm:grid-cols-4 gap-4">
+                            <div class="p-4 bg-gray-700 rounded-lg border border-cyan-500/20 text-center">
+                                <div class="text-2xl font-bold text-cyan-400 mb-2" id="detection-accuracy">0%</div>
+                                <div class="text-sm text-gray-400">Detection Accuracy</div>
+                            </div>
+                            <div class="p-4 bg-gray-700 rounded-lg border border-cyan-500/20 text-center">
+                                <div class="text-2xl font-bold text-green-400 mb-2" id="processing-time">0s</div>
+                                <div class="text-sm text-gray-400">Processing Time</div>
+                            </div>
+                            <div class="p-4 bg-gray-700 rounded-lg border border-cyan-500/20 text-center">
+                                <div class="text-2xl font-bold text-yellow-400 mb-2" id="confidence-level">0%</div>
+                                <div class="text-sm text-gray-400">Confidence Level</div>
+                            </div>
+                            <div class="p-4 bg-gray-700 rounded-lg border border-cyan-500/20 text-center">
+                                <div class="text-2xl font-bold text-purple-400 mb-2" id="anomalies-found">0</div>
+                                <div class="text-sm text-gray-400">Anomalies Detected</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Project <span class="text-cyan-400">Impact</span></h2>
+                <p class="text-xl text-gray-300">Measurable improvements in healthcare outcomes</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-cyan-500/20 text-center">
+                    <div class="text-4xl font-bold text-cyan-400 mb-2">95%</div>
+                    <div class="text-gray-300">Diagnostic Accuracy</div>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-cyan-500/20 text-center">
+                    <div class="text-4xl font-bold text-cyan-400 mb-2">60%</div>
+                    <div class="text-gray-300">Faster Diagnosis</div>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-cyan-500/20 text-center">
+                    <div class="text-4xl font-bold text-cyan-400 mb-2">40%</div>
+                    <div class="text-gray-300">Early Detection Rate</div>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-cyan-500/20 text-center">
+                    <div class="text-4xl font-bold text-cyan-400 mb-2">85%</div>
+                    <div class="text-gray-300">Physician Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Technology <span class="text-cyan-400">Stack</span></h2>
+                <p class="text-xl text-gray-300">Advanced technologies for healthcare AI</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-cyan-500 to-emerald-500 text-white p-4 rounded-xl mb-4 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-eye text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-white">Computer Vision</h3>
+                    <p class="text-gray-300 text-sm">TensorFlow, OpenCV</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-cyan-500 to-blue-500 text-white p-4 rounded-xl mb-4 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-brain text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-white">Deep Learning</h3>
+                    <p class="text-gray-300 text-sm">PyTorch, Keras</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-blue-500 to-cyan-500 text-white p-4 rounded-xl mb-4 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-database text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-white">Data Management</h3>
+                    <p class="text-gray-300 text-sm">PostgreSQL, MongoDB</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-purple-500 to-cyan-500 text-white p-4 rounded-xl mb-4 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-shield-alt text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-white">Security</h3>
+                    <p class="text-gray-300 text-sm">HIPAA Compliance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-modern bg-gray-800 text-white relative overflow-hidden border-t border-cyan-500/20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 observe-on-scroll">
+            <h2 class="text-4xl md:text-5xl font-black mb-6 text-white">Ready to Transform Healthcare with <span class="text-cyan-400">AI?</span></h2>
+            <p class="text-xl text-gray-300 mb-8">Let's discuss how we can implement AI solutions for your healthcare organization</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="btn-modern bg-cyan-500 hover:bg-cyan-600 text-white text-lg px-8 py-4 shadow-lg shadow-cyan-500/50">
+                    Get Free Consultation
+                </a>
+                <a href="tel:+15551234567" class="btn-modern bg-transparent border-2 border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 text-lg px-8 py-4">
+                    Call Us Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-white py-16 border-t border-cyan-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-brain text-white"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-white">AI <span class="text-cyan-400">Solutions</span></h3>
+                    </div>
+                    <p class="text-sm sm:text-base text-gray-400 mb-4">Leading provider of intelligent software and automation tools.</p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-base sm:text-lg text-white">Services</h4>
+                    <ul class="space-y-2 text-sm sm:text-base text-gray-400">
+                        <li><a href="machine-learning.html" class="hover:text-cyan-400 transition-colors">Machine Learning</a></li>
+                        <li><a href="nlp.html" class="hover:text-cyan-400 transition-colors">NLP</a></li>
+                        <li><a href="computer-vision.html" class="hover:text-cyan-400 transition-colors">Computer Vision</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-400 transition-colors">View All</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg text-white">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a></li>
+                        <li><a href="projects.html" class="hover:text-cyan-400 transition-colors">Projects</a></li>
+                        <li><a href="articles.html" class="hover:text-cyan-400 transition-colors">Articles</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg text-white">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-envelope text-cyan-400"></i>
+                            <a href="mailto:aungheinh9@gmail.com" class="hover:text-cyan-400 transition-colors">aungheinh9@gmail.com</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-phone text-cyan-400"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-cyan-400"></i>
+                            <span>123 AI Street, Tech City</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-cyan-500/20 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 AI Solutions Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/modern-animations.js"></script>
+    <script>
+        document.getElementById('mobile-menu-button')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+        
+        // Healthcare Analytics Demo
+        const analyzeScanBtn = document.getElementById('analyze-scan-btn');
+        const healthcareResults = document.getElementById('healthcare-results');
+        const scanCanvas = document.getElementById('scan-canvas');
+        
+        analyzeScanBtn?.addEventListener('click', function() {
+            const btn = this;
+            const age = parseInt(document.getElementById('patient-age').value);
+            const scanType = document.getElementById('scan-type').value;
+            
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Processing...';
+            
+            setTimeout(() => {
+                // Generate scan visualization
+                const ctx = scanCanvas.getContext('2d');
+                const width = scanCanvas.width = scanCanvas.offsetWidth || 400;
+                const height = scanCanvas.height = 300;
+                
+                ctx.clearRect(0, 0, width, height);
+                
+                // Draw scan background
+                ctx.fillStyle = '#1f2937';
+                ctx.fillRect(0, 0, width, height);
+                
+                // Draw scan pattern based on type
+                if (scanType === 'xray') {
+                    // X-ray pattern
+                    ctx.strokeStyle = '#4b5563';
+                    ctx.lineWidth = 2;
+                    for (let i = 0; i < 20; i++) {
+                        ctx.beginPath();
+                        ctx.moveTo(Math.random() * width, 0);
+                        ctx.lineTo(Math.random() * width, height);
+                        ctx.stroke();
+                    }
+                    // Bone structure
+                    ctx.strokeStyle = '#9ca3af';
+                    ctx.lineWidth = 3;
+                    ctx.beginPath();
+                    ctx.arc(width/2, height/2, 80, 0, Math.PI * 2);
+                    ctx.stroke();
+                } else if (scanType === 'ct') {
+                    // CT scan pattern
+                    ctx.fillStyle = '#374151';
+                    for (let i = 0; i < 50; i++) {
+                        ctx.fillRect(Math.random() * width, Math.random() * height, 10, 10);
+                    }
+                } else if (scanType === 'mri') {
+                    // MRI pattern
+                    ctx.strokeStyle = '#4b5563';
+                    ctx.lineWidth = 1;
+                    for (let i = 0; i < 30; i++) {
+                        ctx.beginPath();
+                        ctx.arc(Math.random() * width, Math.random() * height, 20 + Math.random() * 30, 0, Math.PI * 2);
+                        ctx.stroke();
+                    }
+                } else {
+                    // Ultrasound pattern
+                    ctx.fillStyle = '#4b5563';
+                    for (let i = 0; i < 100; i++) {
+                        ctx.fillRect(Math.random() * width, Math.random() * height, 2, 2);
+                    }
+                }
+                
+                // Simulate anomaly detection
+                const hasAnomaly = Math.random() > 0.3;
+                const anomalyCount = hasAnomaly ? Math.floor(Math.random() * 3) + 1 : 0;
+                
+                // Draw detected areas
+                if (hasAnomaly) {
+                    ctx.strokeStyle = '#ef4444';
+                    ctx.lineWidth = 3;
+                    ctx.setLineDash([5, 5]);
+                    for (let i = 0; i < anomalyCount; i++) {
+                        const x = width * 0.3 + Math.random() * width * 0.4;
+                        const y = height * 0.3 + Math.random() * height * 0.4;
+                        const radius = 30 + Math.random() * 20;
+                        ctx.beginPath();
+                        ctx.arc(x, y, radius, 0, Math.PI * 2);
+                        ctx.stroke();
+                    }
+                    ctx.setLineDash([]);
+                }
+                
+                // Generate analysis
+                const analysisDetails = document.getElementById('analysis-details');
+                const findings = [];
+                
+                if (hasAnomaly) {
+                    findings.push({
+                        label: 'Anomaly Detected',
+                        value: 'Yes',
+                        status: 'warning',
+                        icon: 'exclamation-triangle'
+                    });
+                    findings.push({
+                        label: 'Anomaly Type',
+                        value: scanType === 'xray' ? 'Possible fracture' : scanType === 'ct' ? 'Density variation' : 'Tissue irregularity',
+                        status: 'info',
+                        icon: 'info-circle'
+                    });
+                } else {
+                    findings.push({
+                        label: 'Anomaly Detected',
+                        value: 'No significant findings',
+                        status: 'success',
+                        icon: 'check-circle'
+                    });
+                }
+                
+                findings.push({
+                    label: 'Image Quality',
+                    value: 'High',
+                    status: 'success',
+                    icon: 'check-circle'
+                });
+                
+                findings.push({
+                    label: 'Processing Status',
+                    value: 'Complete',
+                    status: 'success',
+                    icon: 'check-circle'
+                });
+                
+                analysisDetails.innerHTML = findings.map(f => `
+                    <div class="flex items-center justify-between p-3 bg-gray-800 rounded-lg">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-${f.icon} text-${f.status === 'warning' ? 'yellow' : f.status === 'info' ? 'cyan' : 'green'}-400"></i>
+                            <span class="text-white font-semibold">${f.label}:</span>
+                        </div>
+                        <span class="text-${f.status === 'warning' ? 'yellow' : f.status === 'info' ? 'cyan' : 'green'}-400 font-bold">${f.value}</span>
+                    </div>
+                `).join('');
+                
+                // Risk assessment
+                const riskLevel = hasAnomaly ? (age > 60 ? 'Moderate' : 'Low') : 'Very Low';
+                const riskColor = riskLevel === 'Moderate' ? 'yellow' : riskLevel === 'Low' ? 'cyan' : 'green';
+                
+                document.getElementById('risk-assessment').innerHTML = `
+                    <div class="p-4 bg-gray-800 rounded-lg">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-white font-semibold">Overall Risk Level:</span>
+                            <span class="text-${riskColor}-400 font-bold text-lg">${riskLevel}</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2 mb-2">
+                            <div class="bg-${riskColor}-500 h-2 rounded-full transition-all duration-500" style="width: ${hasAnomaly ? (age > 60 ? 60 : 30) : 10}%"></div>
+                        </div>
+                        <p class="text-xs text-gray-400">Recommendation: ${hasAnomaly ? 'Follow-up consultation recommended' : 'No immediate action required'}</p>
+                    </div>
+                `;
+                
+                // Update stats
+                document.getElementById('detection-accuracy').textContent = (94 + Math.random() * 4).toFixed(1) + '%';
+                document.getElementById('processing-time').textContent = (1.2 + Math.random() * 0.8).toFixed(1) + 's';
+                document.getElementById('confidence-level').textContent = (88 + Math.random() * 8).toFixed(0) + '%';
+                document.getElementById('anomalies-found').textContent = anomalyCount;
+                
+                healthcareResults.classList.remove('hidden');
+                healthcareResults.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fas fa-stethoscope mr-2"></i>Analyze Medical Scan';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

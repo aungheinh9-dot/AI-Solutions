@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Solutions - Intelligent Software & Automation Tools</title>
+    <meta name="description" content="Leading AI Solutions Company developing intelligent software and automation tools for businesses worldwide.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Raleway:wght@300;400;500;600;700;800;900&family=Oswald:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/modern-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-900">
+    <!-- Modern Navigation -->
+    <nav class="modern-nav-dark" id="main-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 via-emerald-500 to-blue-500 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/50 animate-pulse-glow">
+                        <i class="fas fa-brain text-white text-xl"></i>
+                    </div>
+                    <a href="index.html" class="text-2xl font-bold text-white">AI <span class="text-cyan-400">Solutions</span></a>
+                </div>
+                <div class="hidden md:flex items-center gap-2">
+                    <a href="index.html" class="nav-link-dark active">Home</a>
+                    <a href="services.html" class="nav-link-dark">Services</a>
+                    <a href="about.html" class="nav-link-dark">About</a>
+                    <a href="projects.html" class="nav-link-dark">Projects</a>
+                    <a href="articles.html" class="nav-link-dark">Articles</a>
+                    <a href="galleries.html" class="nav-link-dark">Events</a>
+                    <a href="contact.html" class="btn-modern bg-cyan-500 hover:bg-cyan-600 text-white ml-4 shadow-lg shadow-cyan-500/50">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-cyan-400 focus:outline-none p-2">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 border-t border-cyan-500/20">
+            <div class="px-4 py-4 space-y-2">
+                <a href="index.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Home</a>
+                <a href="services.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Services</a>
+                <a href="about.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">About</a>
+                <a href="projects.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Projects</a>
+                <a href="articles.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Articles</a>
+                <a href="galleries.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Events</a>
+                <a href="contact.html" class="block px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-emerald-500 text-white font-medium text-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center bg-gray-900 pt-20 overflow-hidden">
+        <!-- Dark Background Pattern -->
+        <div class="bg-pattern-dark"></div>
+        
+        <!-- Decorative Dots Pattern -->
+        <div class="dots-pattern"></div>
+        
+        <!-- Cyan Accent Elements -->
+        <div class="absolute top-20 right-20 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl z-0"></div>
+        <div class="absolute bottom-20 left-20 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl z-0"></div>
+        
+        <!-- Network/Globe Pattern -->
+        <div class="network-pattern"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 relative z-20">
+            <div class="text-center animate-fade-in-up">
+                <div class="inline-block mb-6 px-6 py-2 bg-cyan-500/20 backdrop-blur-sm rounded-full shadow-lg border border-cyan-500/30">
+                    <span class="text-cyan-400 font-semibold">🚀 Leading AI Innovation Since 2020</span>
+                </div>
+                <h1 class="hero-title-font text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-4 sm:mb-6 text-white leading-tight px-2">
+                    AI <span class="text-cyan-400">Solutions</span>
+                </h1>
+                <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed px-4">
+                    Transforming businesses with cutting-edge AI technology and automation tools
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center relative z-10">
+                    <a href="services.html" class="btn-modern bg-cyan-500 hover:bg-cyan-600 text-white text-lg px-8 py-4 relative z-10 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-rocket mr-2"></i>Explore Solutions
+                    </a>
+                    <a href="contact.html" class="btn-modern bg-transparent border-2 border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 text-lg px-8 py-4 relative z-10">
+                        <i class="fas fa-play mr-2"></i>Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-float">
+            <a href="#features" class="text-cyan-400 hover:text-cyan-300 transition-colors">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Quick Features Section -->
+    <section id="features" class="section-modern bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 observe-on-scroll">
+                <h2 class="section-title text-white">Why Choose <span class="text-cyan-400">Us?</span></h2>
+                <p class="section-subtitle text-gray-400">Powerful AI solutions that drive real business results</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                <div class="glass-card-dark p-6 sm:p-8 observe-on-scroll border border-cyan-500/20">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-brain text-white text-xl sm:text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white">Expert AI Team</h3>
+                    <p class="text-sm sm:text-base text-gray-300 leading-relaxed">Our team of AI experts brings years of experience in machine learning, deep learning, and automation.</p>
+                </div>
+                
+                <div class="glass-card-dark p-6 sm:p-8 observe-on-scroll border border-cyan-500/20">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-chart-line text-white text-xl sm:text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white">Proven Results</h3>
+                    <p class="text-sm sm:text-base text-gray-300 leading-relaxed">We've helped 100+ companies increase efficiency and revenue with our AI solutions.</p>
+                </div>
+                
+                <div class="glass-card-dark p-6 sm:p-8 observe-on-scroll border border-cyan-500/20">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-shield-alt text-white text-xl sm:text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white">Secure & Scalable</h3>
+                    <p class="text-sm sm:text-base text-gray-300 leading-relaxed">Enterprise-grade security and scalability built into every solution we deliver.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="section-modern bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 observe-on-scroll">
+                <h2 class="section-title text-white">Our <span class="text-cyan-400">Services</span></h2>
+                <p class="section-subtitle text-gray-400">Comprehensive AI solutions tailored to your business needs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <a href="machine-learning.html" class="modern-card-dark group observe-on-scroll p-6 sm:p-8 border border-cyan-500/20 hover:border-cyan-500/50 transition-all">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-xl flex items-center justify-center mb-3 sm:mb-4 shadow-lg shadow-cyan-500/50 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-robot text-white text-lg sm:text-xl"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-white">Machine Learning</h3>
+                    <p class="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4">Advanced ML algorithms to automate processes and gain insights.</p>
+                    <span class="text-sm sm:text-base text-cyan-400 font-semibold group-hover:gap-2 flex items-center gap-1">
+                        Learn More <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
+                    </span>
+                </a>
+                
+                <a href="nlp.html" class="modern-card-dark group observe-on-scroll p-6 sm:p-8 border border-cyan-500/20 hover:border-cyan-500/50 transition-all">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-xl flex items-center justify-center mb-3 sm:mb-4 shadow-lg shadow-cyan-500/50 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-comments text-white text-lg sm:text-xl"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-white">Natural Language Processing</h3>
+                    <p class="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4">Intelligent text analysis and language understanding.</p>
+                    <span class="text-sm sm:text-base text-cyan-400 font-semibold group-hover:gap-2 flex items-center gap-1">
+                        Learn More <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
+                    </span>
+                </a>
+                
+                <a href="computer-vision.html" class="modern-card-dark group observe-on-scroll p-6 sm:p-8 border border-cyan-500/20 hover:border-cyan-500/50 transition-all">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mb-3 sm:mb-4 shadow-lg shadow-cyan-500/50 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-eye text-white text-lg sm:text-xl"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-white">Computer Vision</h3>
+                    <p class="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4">Image and video analysis solutions for automation.</p>
+                    <span class="text-sm sm:text-base text-cyan-400 font-semibold group-hover:gap-2 flex items-center gap-1">
+                        Learn More <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
+                    </span>
+                </a>
+            </div>
+            
+            <div class="text-center mt-12 observe-on-scroll">
+                <a href="services.html" class="btn-modern btn-primary text-lg px-8 py-4">
+                    View All Services <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section-modern bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                <div class="text-center observe-on-scroll">
+                    <div class="text-4xl sm:text-5xl font-black text-cyan-400 mb-2">50+</div>
+                    <div class="text-sm sm:text-base text-gray-300 font-medium">Projects Completed</div>
+                </div>
+                <div class="text-center observe-on-scroll">
+                    <div class="text-4xl sm:text-5xl font-black text-cyan-400 mb-2">100+</div>
+                    <div class="text-sm sm:text-base text-gray-300 font-medium">Happy Clients</div>
+                        </div>
+                <div class="text-center observe-on-scroll">
+                    <div class="text-4xl sm:text-5xl font-black text-cyan-400 mb-2">24/7</div>
+                    <div class="text-sm sm:text-base text-gray-300 font-medium">Support</div>
+                        </div>
+                <div class="text-center observe-on-scroll">
+                    <div class="text-4xl sm:text-5xl font-black text-cyan-400 mb-2">5★</div>
+                    <div class="text-sm sm:text-base text-gray-300 font-medium">Average Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Feedback Section -->
+    <section class="section-modern bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 observe-on-scroll">
+                <span class="inline-block bg-cyan-500/20 border border-cyan-500/30 text-cyan-400 px-6 py-2 rounded-full text-sm font-semibold mb-4 shadow-lg shadow-cyan-500/20">
+                    ⭐ Client Reviews
+                </span>
+                
+                <h2 class="section-title text-white">What Our <span class="text-cyan-400">Clients Say</span></h2>
+                <p class="section-subtitle text-gray-400">Real feedback from satisfied customers worldwide</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <div class="glass-card-dark p-6 sm:p-8 observe-on-scroll border border-cyan-500/20">
+                    <div class="flex items-center justify-between mb-4 sm:mb-6">
+                        <div class="flex text-yellow-400 text-base sm:text-lg">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        <span class="bg-gradient-to-r from-yellow-400 to-orange-400 text-white px-3 py-1 rounded-full text-xs font-bold">5.0</span>
+                        </div>
+                    <div class="mb-3 sm:mb-4">
+                        <i class="fas fa-quote-left text-3xl sm:text-4xl text-emerald-400/20"></i>
+                        </div>
+                    <p class="text-gray-300 mb-4 sm:mb-6 leading-relaxed text-base sm:text-lg italic">
+                            "AI Solutions transformed our business operations. Their AI chatbot reduced our support tickets by 60% and improved customer satisfaction significantly."
+                        </p>
+                    <div class="flex items-center gap-3 sm:gap-4 pt-4 border-t border-cyan-500/20">
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" 
+                                     alt="Sarah Johnson" 
+                                 class="w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover ring-4 ring-emerald-200 shadow-lg"
+                                 onerror="this.src='https://ui-avatars.com/api/?name=Sarah+Johnson&background=10b981&color=fff&size=128'">
+                        </div>
+                        <div>
+                            <div class="font-bold text-white text-base sm:text-lg">Sarah Johnson</div>
+                            <div class="text-xs sm:text-sm text-gray-400">CEO, TechCorp</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card-dark p-6 sm:p-8 observe-on-scroll border border-cyan-500/20">
+                    <div class="flex items-center justify-between mb-4 sm:mb-6">
+                        <div class="flex text-yellow-400 text-base sm:text-lg">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        <span class="bg-gradient-to-r from-yellow-400 to-orange-400 text-white px-3 py-1 rounded-full text-xs font-bold">5.0</span>
+                    </div>
+                    <div class="mb-3 sm:mb-4">
+                        <i class="fas fa-quote-left text-3xl sm:text-4xl text-cyan-400/20"></i>
+                    </div>
+                    <p class="text-gray-300 mb-4 sm:mb-6 leading-relaxed text-base sm:text-lg italic">
+                        "The predictive analytics solution helped us make better decisions and increased our revenue by 25%. The team's expertise is unmatched."
+                    </p>
+                    <div class="flex items-center gap-3 sm:gap-4 pt-4 border-t border-cyan-500/20">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" 
+                                 alt="Michael Chen" 
+                                 class="w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover ring-4 ring-cyan-200 shadow-lg"
+                                 onerror="this.src='https://ui-avatars.com/api/?name=Michael+Chen&background=06b6d4&color=fff&size=128'">
+                        </div>
+                        <div>
+                            <div class="font-bold text-white text-base sm:text-lg">Michael Chen</div>
+                            <div class="text-xs sm:text-sm text-gray-400">CTO, DataFlow Inc</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card-dark p-6 sm:p-8 observe-on-scroll border border-cyan-500/20">
+                    <div class="flex items-center justify-between mb-4 sm:mb-6">
+                        <div class="flex text-yellow-400 text-base sm:text-lg">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        <span class="bg-gradient-to-r from-yellow-400 to-orange-400 text-white px-3 py-1 rounded-full text-xs font-bold">5.0</span>
+                    </div>
+                    <div class="mb-3 sm:mb-4">
+                        <i class="fas fa-quote-left text-3xl sm:text-4xl text-blue-400/20"></i>
+                    </div>
+                    <p class="text-gray-300 mb-4 sm:mb-6 leading-relaxed text-base sm:text-lg italic">
+                        "Outstanding AI implementation. The team delivered exactly what we needed on time and within budget. Highly recommend their services!"
+                    </p>
+                    <div class="flex items-center gap-3 sm:gap-4 pt-4 border-t border-cyan-500/20">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" 
+                                 alt="Emily Rodriguez" 
+                                 class="w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover ring-4 ring-blue-200 shadow-lg"
+                                 onerror="this.src='https://ui-avatars.com/api/?name=Emily+Rodriguez&background=3b82f6&color=fff&size=128'">
+                        </div>
+            <div>
+                            <div class="font-bold text-white text-base sm:text-lg">Emily Rodriguez</div>
+                            <div class="text-xs sm:text-sm text-gray-400">Director, InnovateLab</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-modern bg-gray-800 text-white relative overflow-hidden border-t border-cyan-500/20">
+        <div class="bg-pattern"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 observe-on-scroll">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-4 sm:mb-6 px-2">Ready to Transform Your Business?</h2>
+            <p class="text-lg sm:text-xl text-white/90 mb-6 sm:mb-8 px-4">Let's discuss how AI can revolutionize your operations</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="btn-modern bg-cyan-500 hover:bg-cyan-600 text-white text-lg px-8 py-4 shadow-lg shadow-cyan-500/50">
+                    Get Free Consultation
+                </a>
+                <a href="projects.html" class="btn-modern bg-transparent border-2 border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 text-lg px-8 py-4">
+                    View Our Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chatbot -->
+    <div id="chatbot" class="fixed bottom-4 right-4 sm:bottom-4 sm:right-4 z-50">
+        <div id="chatbot-toggle" class="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-emerald-500 via-cyan-500 to-blue-500 text-white rounded-full shadow-2xl cursor-pointer hover:scale-110 transition-transform flex items-center justify-center animate-pulse-glow">
+            <i class="fas fa-robot text-xl sm:text-2xl"></i>
+        </div>
+        <div id="chatbot-window" class="hidden fixed sm:absolute bottom-20 left-4 right-4 sm:left-auto sm:right-0 sm:w-96 w-[calc(100%-2rem)] h-[500px] max-h-[calc(100vh-8rem)] glass-card rounded-2xl shadow-2xl border border-white/20 flex flex-col" style="min-width: 320px;">
+            <div class="bg-gradient-to-r from-emerald-500 via-cyan-500 to-blue-500 text-white p-3 sm:p-4 rounded-t-2xl flex-shrink-0 relative z-50">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2 sm:gap-3">
+                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-white/20 rounded-full flex items-center justify-center">
+                            <i class="fas fa-robot text-sm sm:text-base"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-sm sm:text-base">AI Assistant</h3>
+                            <p class="text-xs text-white/80">Online</p>
+                        </div>
+                    </div>
+                    <button id="chatbot-close" type="button" class="text-white hover:text-gray-200 active:text-gray-300 transition-colors p-2 sm:p-1 min-w-[44px] min-h-[44px] flex items-center justify-center touch-manipulation" aria-label="Close chat" style="z-index: 10000; pointer-events: auto; cursor: pointer;">
+                        <i class="fas fa-times text-lg sm:text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="chatbot-messages" class="flex-1 overflow-y-auto overflow-x-hidden bg-gray-800/50 p-3 sm:p-4 min-h-0" style="word-wrap: break-word; overflow-wrap: break-word;">
+                <!-- Messages will be added dynamically by chatbot.js -->
+            </div>
+            <div class="p-3 sm:p-4 border-t border-cyan-500/20 bg-gray-800/80 flex-shrink-0">
+                <div class="flex gap-2">
+                    <input type="text" id="chatbot-input" placeholder="Type your message..." 
+                           class="flex-1 px-3 sm:px-4 py-2 sm:py-3 rounded-xl border border-cyan-500/30 bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all text-sm sm:text-base placeholder-gray-400">
+                    <button id="chatbot-send" class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-cyan-500 to-emerald-500 text-white rounded-xl hover:scale-105 transition-transform flex items-center justify-center shadow-lg shadow-cyan-500/50">
+                        <i class="fas fa-paper-plane text-sm sm:text-base"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-white py-16 border-t border-cyan-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-brain text-white"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-white">AI <span class="text-cyan-400">Solutions</span></h3>
+                    </div>
+                    <p class="text-sm sm:text-base text-gray-400 mb-4">Leading provider of intelligent software and automation tools.</p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-base sm:text-lg text-white">Services</h4>
+                    <ul class="space-y-2 text-sm sm:text-base text-gray-400">
+                        <li><a href="machine-learning.html" class="hover:text-cyan-400 transition-colors">Machine Learning</a></li>
+                        <li><a href="nlp.html" class="hover:text-cyan-400 transition-colors">NLP</a></li>
+                        <li><a href="computer-vision.html" class="hover:text-cyan-400 transition-colors">Computer Vision</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-400 transition-colors">View All</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg text-white">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a></li>
+                        <li><a href="projects.html" class="hover:text-cyan-400 transition-colors">Projects</a></li>
+                        <li><a href="articles.html" class="hover:text-cyan-400 transition-colors">Articles</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg text-white">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-envelope text-cyan-400"></i>
+                            <a href="mailto:aungheinh9@gmail.com" class="hover:text-cyan-400 transition-colors">aungheinh9@gmail.com</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-phone text-cyan-400"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-cyan-400"></i>
+                            <span>123 AI Street, Tech City</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-cyan-500/20 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 AI Solutions Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+        import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
+        import { getAuth } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js';
+        import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js';
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBYXwGpXUr1A0oDFvJkB7D75Az6ZvLJ1fA",
+            authDomain: "sakenyitdl.firebaseapp.com",
+            projectId: "sakenyitdl",
+            storageBucket: "sakenyitdl.firebasestorage.app",
+            messagingSenderId: "539321065353",
+            appId: "1:539321065353:web:ca30cdc51899d86949cb58",
+            measurementId: "G-YWZ767MGLD"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const auth = getAuth(app);
+        const analytics = getAnalytics(app);
+
+        window.firebase = { app, db, auth, analytics };
+    </script>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/modern-animations.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Nav scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

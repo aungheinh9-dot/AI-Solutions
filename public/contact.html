@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AI Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Raleway:wght@300;400;500;600;700;800;900&family=Oswald:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
+    <link rel="stylesheet" href="css/modern-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .fi {
+            width: 20px;
+            height: 15px;
+            border-radius: 2px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        #selected-flag {
+            width: 20px;
+            height: 15px;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="modern-nav-dark" id="main-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 via-emerald-500 to-blue-500 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/50 animate-pulse-glow">
+                        <i class="fas fa-brain text-white text-xl"></i>
+                    </div>
+                    <a href="index.html" class="text-2xl font-bold text-white">AI <span class="text-cyan-400">Solutions</span></a>
+                </div>
+                <div class="hidden md:flex items-center gap-2">
+                    <a href="index.html" class="nav-link-dark">Home</a>
+                    <a href="services.html" class="nav-link-dark">Services</a>
+                    <a href="about.html" class="nav-link-dark">About</a>
+                    <a href="projects.html" class="nav-link-dark">Projects</a>
+                    <a href="articles.html" class="nav-link-dark">Articles</a>
+                    <a href="galleries.html" class="nav-link-dark">Events</a>
+                    <a href="contact.html" class="nav-link-dark active">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-cyan-400 focus:outline-none p-2">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 border-t border-cyan-500/20">
+            <div class="px-4 py-4 space-y-2">
+                <a href="index.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Home</a>
+                <a href="services.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Services</a>
+                <a href="about.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">About</a>
+                <a href="projects.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Projects</a>
+                <a href="articles.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Articles</a>
+                <a href="galleries.html" class="block px-4 py-2 rounded-lg hover:bg-cyan-500/10 text-gray-300 font-medium">Events</a>
+                <a href="contact.html" class="block px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-emerald-500 text-white font-medium text-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 bg-gray-900">
+        <div class="bg-pattern-dark"></div>
+        <div class="dots-pattern"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center animate-fade-in-up">
+                <h1 class="hero-title-font text-5xl sm:text-6xl md:text-7xl mb-6 text-white">Get In <span class="text-cyan-400">Touch</span></h1>
+                <p class="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto">Ready to transform your business with AI? Contact us today!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-modern bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div class="observe-on-scroll">
+                    <h2 class="text-3xl font-black mb-6 text-white">Contact <span class="text-cyan-400">Information</span></h2>
+                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                        Have questions about our AI solutions? We're here to help. Reach out to us through any of the channels below.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4 glass-card-dark p-6 border border-cyan-500/20 hover:border-cyan-500/50">
+                            <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-cyan-500/50">
+                                <i class="fas fa-envelope text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1 text-white">Email</h3>
+                                <a href="mailto:aungheinh9@gmail.com" class="text-cyan-400 hover:text-cyan-300 transition-colors">aungheinh9@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 glass-card-dark p-6 border border-cyan-500/20 hover:border-cyan-500/50">
+                            <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-cyan-500/50">
+                                <i class="fas fa-phone text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1 text-white">Phone</h3>
+                                <a href="tel:+15551234567" class="text-cyan-400 hover:text-cyan-300 transition-colors">+1 (555) 123-4567</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 glass-card-dark p-6 border border-cyan-500/20 hover:border-cyan-500/50">
+                            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-cyan-500/50">
+                                <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1 text-white">Address</h3>
+                                <p class="text-gray-300">123 AI Street, Tech City, TC 12345</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="observe-on-scroll">
+                    <h2 class="text-2xl font-black mb-4 text-white">Send Us a <span class="text-cyan-400">Message</span></h2>
+                    <form id="contact-form" class="space-y-4 glass-card-dark p-5 border border-cyan-500/20">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div>
+                                <label for="name" class="block text-xs font-semibold text-gray-300 mb-1.5">Name *</label>
+                                <input type="text" id="name" name="name" required 
+                                       class="w-full px-3 py-2 text-sm rounded-lg border border-cyan-500/30 bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all placeholder-gray-400">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-xs font-semibold text-gray-300 mb-1.5">Email *</label>
+                                <input type="email" id="email" name="email" required 
+                                       class="w-full px-3 py-2 text-sm rounded-lg border border-cyan-500/30 bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all placeholder-gray-400">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div>
+                                <label for="company" class="block text-xs font-semibold text-gray-300 mb-1.5">Company Name</label>
+                                <input type="text" id="company" name="company" 
+                                       class="w-full px-3 py-2 text-sm rounded-lg border border-cyan-500/30 bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all placeholder-gray-400">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-xs font-semibold text-gray-300 mb-1.5">Phone Number</label>
+                                <div class="relative">
+                                    <!-- Country Selector Button -->
+                                    <button type="button" id="country-selector-btn" class="w-full flex items-center justify-between px-3 py-2 text-sm rounded-t-lg border border-b-0 border-cyan-500/30 bg-gray-700 text-white hover:bg-gray-600 transition-colors">
+                                        <div class="flex items-center gap-2">
+                                            <span id="selected-flag" class="fi fi-mm"></span>
+                                            <span id="selected-country-code" class="text-gray-300 text-xs">MM</span>
+                                            <span id="selected-country" class="text-cyan-400">Myanmar (Burma)</span>
+                                        </div>
+                                        <i class="fas fa-chevron-right text-gray-400"></i>
+                                    </button>
+                                    
+                                    <!-- Country Dropdown -->
+                                    <div id="country-dropdown" class="hidden absolute z-50 w-full mt-0 bg-gray-700 border border-cyan-500/30 border-t-0 rounded-b-lg max-h-60 overflow-y-auto shadow-lg">
+                                        <div class="country-option flex items-center gap-2 px-3 py-2 hover:bg-gray-600 cursor-pointer border-b border-cyan-500/10" data-country="Myanmar" data-code="+95" data-flag-class="fi-mm" data-country-code="MM">
+                                            <span class="fi fi-mm"></span>
+                                            <span class="text-gray-300 text-xs">MM</span>
+                                            <span class="text-white flex-1">Myanmar (Burma)</span>
+                                            <span class="text-gray-400 text-xs">+95</span>
+                                        </div>
+                                        <div class="country-option flex items-center gap-2 px-3 py-2 hover:bg-gray-600 cursor-pointer border-b border-cyan-500/10" data-country="United States" data-code="+1" data-flag-class="fi-us" data-country-code="US">
+                                            <span class="fi fi-us"></span>
+                                            <span class="text-gray-300 text-xs">US</span>
+                                            <span class="text-white flex-1">United States</span>
+                                            <span class="text-gray-400 text-xs">+1</span>
+                                        </div>
+                                        <div class="country-option flex items-center gap-2 px-3 py-2 hover:bg-gray-600 cursor-pointer border-b border-cyan-500/10" data-country="United Kingdom" data-code="+44" data-flag-class="fi-gb" data-country-code="GB">
+                                            <span class="fi fi-gb"></span>
+                                            <span class="text-gray-300 text-xs">GB</span>
+                                            <span class="text-white flex-1">United Kingdom</span>
+                                            <span class="text-gray-400 text-xs">+44</span>
+                                        </div>
+                                        <div class="country-option flex items-center gap-2 px-3 py-2 hover:bg-gray-600 cursor-pointer border-b border-cyan-500/10" data-country="India" data-code="+91" data-flag-class="fi-in" data-country-code="IN">
+                                            <span class="fi fi-in"></span>
+                                            <span class="text-gray-300 text-xs">IN</span>
+                                            <span class="text-white flex-1">India</span>
+                                            <span class="text-gray-400 text-xs">+91</span>
+                                        </div>
+                                        <div class="country-option flex items-center gap-2 px-3 py-2 hover:bg-gray-600 cursor-pointer border-b border-cyan-500/10" data-country="China" data-code="+86" data-flag-class="fi-cn" data-country-code="CN">
+                                            <span class="fi fi-cn"></span>
+                                            <span class="text-gray-300 text-xs">CN</span>
+                                            <span class="text-white flex-1">China</span>
+                                            <span class="text-gray-400 text-xs">+86</span>
+                                        </div>
+                                        <div class="country-option flex items-center gap-2 px-3 py-2 hover:bg-gray-600 cursor-pointer border-b border-cyan-500/10" data-country="Singapore" data-code="+65" data-flag-class="fi-sg" data-country-code="SG">
+                                            <span class="fi fi-sg"></span>
+                                            <span class="text-gray-300 text-xs">SG</span>
+                                            <span class="text-white flex-1">Singapore</span>
+                                            <span class="text-gray-400 text-xs">+65</span>
+                                        </div>
+                                        <div class="country-option flex items-center gap-2 px-3 py-2 hover:bg-gray-600 cursor-pointer border-b border-cyan-500/10" data-country="Malaysia" data-code="+60" data-flag-class="fi-my" data-country-code="MY">
+                                            <span class="fi fi-my"></span>
+                                            <span class="text-gray-300 text-xs">MY</span>
+                                            <span class="text-white flex-1">Malaysia</span>
+                                            <span class="text-gray-400 text-xs">+60</span>
+                                        </div>
+                                        <div class="country-option flex items-center gap-2 px-3 py-2 hover:bg-gray-600 cursor-pointer border-b border-cyan-500/10" data-country="Thailand" data-code="+66" data-flag-class="fi-th" data-country-code="TH">
+                                            <span class="fi fi-th"></span>
+                                            <span class="text-gray-300 text-xs">TH</span>
+                                            <span class="text-white flex-1">Thailand</span>
+                                            <span class="text-gray-400 text-xs">+66</span>
+                                        </div>
+                                        <div class="country-option flex items-center gap-2 px-3 py-2 hover:bg-gray-600 cursor-pointer border-b border-cyan-500/10" data-country="Vietnam" data-code="+84" data-flag-class="fi-vn" data-country-code="VN">
+                                            <span class="fi fi-vn"></span>
+                                            <span class="text-gray-300 text-xs">VN</span>
+                                            <span class="text-white flex-1">Vietnam</span>
+                                            <span class="text-gray-400 text-xs">+84</span>
+                                        </div>
+                                        <div class="country-option flex items-center gap-2 px-3 py-2 hover:bg-gray-600 cursor-pointer border-b border-cyan-500/10" data-country="Indonesia" data-code="+62" data-flag-class="fi-id" data-country-code="ID">
+                                            <span class="fi fi-id"></span>
+                                            <span class="text-gray-300 text-xs">ID</span>
+                                            <span class="text-white flex-1">Indonesia</span>
+                                            <span class="text-gray-400 text-xs">+62</span>
+                                        </div>
+                                        <div class="country-option flex items-center gap-2 px-3 py-2 hover:bg-gray-600 cursor-pointer border-b border-cyan-500/10" data-country="Philippines" data-code="+63" data-flag-class="fi-ph" data-country-code="PH">
+                                            <span class="fi fi-ph"></span>
+                                            <span class="text-gray-300 text-xs">PH</span>
+                                            <span class="text-white flex-1">Philippines</span>
+                                            <span class="text-gray-400 text-xs">+63</span>
+                                        </div>
+                                        <div class="country-option flex items-center gap-2 px-3 py-2 hover:bg-gray-600 cursor-pointer border-b border-cyan-500/10" data-country="Japan" data-code="+81" data-flag-class="fi-jp" data-country-code="JP">
+                                            <span class="fi fi-jp"></span>
+                                            <span class="text-gray-300 text-xs">JP</span>
+                                            <span class="text-white flex-1">Japan</span>
+                                            <span class="text-gray-400 text-xs">+81</span>
+                                        </div>
+                                        <div class="country-option flex items-center gap-2 px-3 py-2 hover:bg-gray-600 cursor-pointer" data-country="South Korea" data-code="+82" data-flag-class="fi-kr" data-country-code="KR">
+                                            <span class="fi fi-kr"></span>
+                                            <span class="text-gray-300 text-xs">KR</span>
+                                            <span class="text-white flex-1">South Korea</span>
+                                            <span class="text-gray-400 text-xs">+82</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Phone Input with Country Code -->
+                                    <div class="flex items-center rounded-b-lg border border-cyan-500/30 bg-gray-700">
+                                        <span id="phone-prefix" class="px-3 py-2 text-sm text-white border-r border-cyan-500/30">+95</span>
+                                    <input type="tel" id="phone" name="phone" 
+                                               class="flex-1 px-3 py-2 text-sm bg-transparent text-white focus:outline-none placeholder-gray-400"
+                                               placeholder="9753247637">
+                                    </div>
+                                </div>
+                                <p id="phone-error" class="text-xs text-red-400 mt-1 hidden"></p>
+                                <input type="hidden" id="country-code" name="countryCode" value="+95">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="country" class="block text-xs font-semibold text-gray-300 mb-1.5">Country</label>
+                            <select id="country" name="country" 
+                                   class="w-full px-3 py-2 text-sm rounded-lg border border-cyan-500/30 bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all">
+                                <option value="">Select Country</option>
+                                <option value="Myanmar">🇲🇲 Myanmar</option>
+                                <option value="United States">🇺🇸 United States</option>
+                                <option value="United Kingdom">🇬🇧 United Kingdom</option>
+                                <option value="India">🇮🇳 India</option>
+                                <option value="China">🇨🇳 China</option>
+                                <option value="Singapore">🇸🇬 Singapore</option>
+                                <option value="Malaysia">🇲🇾 Malaysia</option>
+                                <option value="Thailand">🇹🇭 Thailand</option>
+                                <option value="Vietnam">🇻🇳 Vietnam</option>
+                                <option value="Indonesia">🇮🇩 Indonesia</option>
+                                <option value="Philippines">🇵🇭 Philippines</option>
+                                <option value="Japan">🇯🇵 Japan</option>
+                                <option value="South Korea">🇰🇷 South Korea</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="jobTitle" class="block text-xs font-semibold text-gray-300 mb-1.5">Job Title</label>
+                            <input type="text" id="jobTitle" name="jobTitle" 
+                                   class="w-full px-3 py-2 text-sm rounded-lg border border-cyan-500/30 bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all placeholder-gray-400">
+                        </div>
+                        <div>
+                            <label for="jobDetails" class="block text-xs font-semibold text-gray-300 mb-1.5">Job Details / Project Requirements *</label>
+                            <textarea id="jobDetails" name="jobDetails" rows="4" required 
+                                      class="w-full px-3 py-2 text-sm rounded-lg border border-cyan-500/30 bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-all resize-none placeholder-gray-400"></textarea>
+                        </div>
+                        <button type="submit" class="btn-modern bg-cyan-500 hover:bg-cyan-600 text-white w-full text-base py-3 mt-2 shadow-lg shadow-cyan-500/50">
+                            <i class="fas fa-paper-plane mr-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-white py-16 border-t border-cyan-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-emerald-500 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-brain text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">AI <span class="text-cyan-400">Solutions</span></h3>
+                    </div>
+                    <p class="text-sm sm:text-base text-gray-400 mb-4">Leading provider of intelligent software and automation tools.</p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cyan-500 rounded-lg flex items-center justify-center transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-base sm:text-lg text-white">Services</h4>
+                    <ul class="space-y-2 text-sm sm:text-base text-gray-400">
+                        <li><a href="machine-learning.html" class="hover:text-cyan-400 transition-colors">Machine Learning</a></li>
+                        <li><a href="nlp.html" class="hover:text-cyan-400 transition-colors">NLP</a></li>
+                        <li><a href="computer-vision.html" class="hover:text-cyan-400 transition-colors">Computer Vision</a></li>
+                        <li><a href="services.html" class="hover:text-cyan-400 transition-colors">View All</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg text-white">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a></li>
+                        <li><a href="projects.html" class="hover:text-cyan-400 transition-colors">Projects</a></li>
+                        <li><a href="articles.html" class="hover:text-cyan-400 transition-colors">Articles</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg text-white">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-envelope text-cyan-400"></i>
+                            <a href="mailto:aungheinh9@gmail.com" class="hover:text-cyan-400 transition-colors">aungheinh9@gmail.com</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-phone text-cyan-400"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-cyan-400"></i>
+                            <span>123 AI Street, Tech City</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-cyan-500/20 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 AI Solutions Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+        import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
+        import { getAuth } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js';
+        import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js';
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBYXwGpXUr1A0oDFvJkB7D75Az6ZvLJ1fA",
+            authDomain: "sakenyitdl.firebaseapp.com",
+            projectId: "sakenyitdl",
+            storageBucket: "sakenyitdl.firebasestorage.app",
+            messagingSenderId: "539321065353",
+            appId: "1:539321065353:web:ca30cdc51899d86949cb58",
+            measurementId: "G-YWZ767MGLD"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const auth = getAuth(app);
+        const analytics = getAnalytics(app);
+
+        window.firebase = { app, db, auth, analytics };
+    </script>
+
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/modern-animations.js"></script>
+    <script>
+        document.getElementById('mobile-menu-button')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Phone number input functionality
+        const countrySelectorBtn = document.getElementById('country-selector-btn');
+        const countryDropdown = document.getElementById('country-dropdown');
+        const selectedFlag = document.getElementById('selected-flag');
+        const selectedCountryCode = document.getElementById('selected-country-code');
+        const selectedCountry = document.getElementById('selected-country');
+        const phonePrefix = document.getElementById('phone-prefix');
+        const countryCodeInput = document.getElementById('country-code');
+        const phoneInput = document.getElementById('phone');
+        const phoneError = document.getElementById('phone-error');
+        const countrySelect = document.getElementById('country');
+        const countryOptions = document.querySelectorAll('.country-option');
+
+        let currentCountry = 'Myanmar';
+        let currentCode = '+95';
+
+        // Toggle country dropdown
+        countrySelectorBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            countryDropdown.classList.toggle('hidden');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!countrySelectorBtn.contains(e.target) && !countryDropdown.contains(e.target)) {
+                countryDropdown.classList.add('hidden');
+            }
+        });
+
+        // Handle country selection
+        countryOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                const country = this.getAttribute('data-country');
+                const code = this.getAttribute('data-code');
+                const flagClass = this.getAttribute('data-flag-class');
+                const countryCode = this.getAttribute('data-country-code');
+                
+                // Update display
+                selectedFlag.className = flagClass;
+                selectedCountryCode.textContent = countryCode;
+                selectedCountry.textContent = country;
+                phonePrefix.textContent = code;
+                countryCodeInput.value = code;
+                
+                // Update current values
+                currentCountry = country;
+                currentCode = code;
+                
+                // Update country select field if it exists
+                if (countrySelect) {
+                    countrySelect.value = country;
+                }
+                
+                // Clear phone input and error
+                phoneInput.value = '';
+                phoneError.classList.add('hidden');
+                phoneInput.parentElement.parentElement.classList.remove('border-red-500');
+                
+                // Set placeholder based on country
+                const placeholders = {
+                    'Myanmar': '9753247637',
+                    'United States': '2025551234',
+                    'United Kingdom': '7123456789',
+                    'India': '9876543210',
+                    'China': '13800138000',
+                    'Singapore': '91234567',
+                    'Malaysia': '123456789',
+                    'Thailand': '812345678',
+                    'Vietnam': '912345678',
+                    'Indonesia': '8123456789',
+                    'Philippines': '9123456789',
+                    'Japan': '9012345678',
+                    'South Korea': '1012345678'
+                };
+                phoneInput.placeholder = placeholders[country] || 'Enter phone number';
+                
+                // Close dropdown
+                countryDropdown.classList.add('hidden');
+            });
+        });
+
+        // Phone number validation rules for each country
+        const phoneValidationRules = {
+            'Myanmar': {
+                pattern: /^9\d{8,9}$/,
+                startsWith: '9',
+                message: 'Myanmar phone numbers must start with 9 and be 9-10 digits'
+            },
+            'United States': {
+                pattern: /^[2-9]\d{9}$/,
+                startsWith: '2-9',
+                message: 'US phone numbers must be 10 digits and start with 2-9'
+            },
+            'United Kingdom': {
+                pattern: /^[1-9]\d{9}$/,
+                startsWith: '1-9',
+                message: 'UK phone numbers must be 10 digits and start with 1-9'
+            },
+            'India': {
+                pattern: /^[6-9]\d{9}$/,
+                startsWith: '6-9',
+                message: 'Indian phone numbers must be 10 digits and start with 6, 7, 8, or 9'
+            },
+            'China': {
+                pattern: /^1\d{10}$/,
+                startsWith: '1',
+                message: 'Chinese phone numbers must be 11 digits and start with 1'
+            },
+            'Singapore': {
+                pattern: /^[689]\d{7}$/,
+                startsWith: '6, 8, or 9',
+                message: 'Singapore phone numbers must be 8 digits and start with 6, 8, or 9'
+            },
+            'Malaysia': {
+                pattern: /^1\d{8,9}$/,
+                startsWith: '1',
+                message: 'Malaysian phone numbers must be 9-10 digits and start with 1'
+            },
+            'Thailand': {
+                pattern: /^[689]\d{8}$/,
+                startsWith: '6, 8, or 9',
+                message: 'Thai phone numbers must be 9 digits and start with 6, 8, or 9'
+            },
+            'Vietnam': {
+                pattern: /^[35789]\d{8,9}$/,
+                startsWith: '3, 5, 7, 8, or 9',
+                message: 'Vietnamese phone numbers must be 9-10 digits and start with 3, 5, 7, 8, or 9'
+            },
+            'Indonesia': {
+                pattern: /^8\d{8,11}$/,
+                startsWith: '8',
+                message: 'Indonesian phone numbers must be 9-12 digits and start with 8'
+            },
+            'Philippines': {
+                pattern: /^9\d{9}$/,
+                startsWith: '9',
+                message: 'Philippine phone numbers must be 10 digits and start with 9'
+            },
+            'Japan': {
+                pattern: /^[789]\d{9,10}$/,
+                startsWith: '7, 8, or 9',
+                message: 'Japanese phone numbers must be 10-11 digits and start with 7, 8, or 9'
+            },
+            'South Korea': {
+                pattern: /^1\d{8,10}$/,
+                startsWith: '1',
+                message: 'South Korean phone numbers must be 9-11 digits and start with 1'
+            }
+        };
+
+        // Validate phone number
+        phoneInput.addEventListener('input', function() {
+            const phoneValue = this.value.replace(/\s+/g, ''); // Remove spaces
+            const rules = phoneValidationRules[currentCountry];
+            
+            // Always clear error if field is empty
+            if (!phoneValue || phoneValue.length === 0) {
+                phoneError.classList.add('hidden');
+                phoneInput.parentElement.parentElement.classList.remove('border-red-500');
+                return;
+            }
+            
+            if (!rules) {
+                phoneError.classList.add('hidden');
+                phoneInput.parentElement.parentElement.classList.remove('border-red-500');
+                return;
+            }
+            
+            // Check if it starts with the required digit(s)
+            const startsWithValid = rules.startsWith.split(', ').some(start => {
+                if (start.includes('-')) {
+                    const [min, max] = start.split('-').map(Number);
+                    const firstDigit = parseInt(phoneValue[0]);
+                    return firstDigit >= min && firstDigit <= max;
+                } else {
+                    return phoneValue.startsWith(start);
+                }
+            });
+            
+            // Show "starts with" error only if first digit is wrong
+            if (!startsWithValid) {
+                phoneError.textContent = `${currentCountry} phone numbers must start with ${rules.startsWith}`;
+                phoneError.classList.remove('hidden');
+                phoneInput.parentElement.parentElement.classList.add('border-red-500');
+            } 
+            // Check full pattern only if it starts correctly
+            else if (!rules.pattern.test(phoneValue)) {
+                // Extract minimum length from pattern (approximate)
+                const patternStr = rules.pattern.toString();
+                const minLengthMatch = patternStr.match(/\{(\d+)(?:,(\d+))?\}/);
+                const minLength = minLengthMatch ? parseInt(minLengthMatch[1]) : 8;
+                
+                // Only show error if user has typed enough to potentially complete the number
+                if (phoneValue.length >= minLength) {
+                    phoneError.textContent = rules.message;
+                    phoneError.classList.remove('hidden');
+                    phoneInput.parentElement.parentElement.classList.add('border-red-500');
+                } else {
+                    // User is still typing, don't show error yet
+                    phoneError.classList.add('hidden');
+                    phoneInput.parentElement.parentElement.classList.remove('border-red-500');
+                }
+            } else {
+                // Valid number
+                phoneError.classList.add('hidden');
+                phoneInput.parentElement.parentElement.classList.remove('border-red-500');
+            }
+        });
+        
+        // Clear error when field loses focus if empty
+        phoneInput.addEventListener('blur', function() {
+            if (!this.value.trim()) {
+                phoneError.classList.add('hidden');
+                phoneInput.parentElement.parentElement.classList.remove('border-red-500');
+            }
+        });
+
+        // Sync with country select field
+        if (countrySelect) {
+            countrySelect.addEventListener('change', function() {
+                const selectedCountryValue = this.value;
+                const matchingOption = Array.from(countryOptions).find(opt => 
+                    opt.getAttribute('data-country') === selectedCountryValue
+                );
+                
+                if (matchingOption) {
+                    matchingOption.click();
+                }
+            });
+        }
+
+        // Validate on form submit
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            const phoneValue = phoneInput.value.replace(/\s+/g, '');
+            const rules = phoneValidationRules[currentCountry];
+            
+            if (rules && phoneValue) {
+                // Check if it starts with the required digit(s)
+                const startsWithValid = rules.startsWith.split(', ').some(start => {
+                    if (start.includes('-')) {
+                        const [min, max] = start.split('-').map(Number);
+                        const firstDigit = parseInt(phoneValue[0]);
+                        return firstDigit >= min && firstDigit <= max;
+                    } else {
+                        return phoneValue.startsWith(start);
+                    }
+                });
+                
+                if (!startsWithValid || !rules.pattern.test(phoneValue)) {
+                    e.preventDefault();
+                    phoneError.textContent = rules.message;
+                    phoneError.classList.remove('hidden');
+                    phoneInput.focus();
+                    return false;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
