@@ -477,24 +477,9 @@
     <script src="js/chatbot.js"></script>
     <script src="js/modern-animations.js"></script>
     <script>
-        // Mobile menu toggle - ensure it works even if main.js hasn't loaded
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            
-            if (mobileMenuButton && mobileMenu) {
-                mobileMenuButton.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    e.preventDefault();
-                    mobileMenu.classList.toggle('hidden');
-                    // Force display for mobile
-                    if (!mobileMenu.classList.contains('hidden')) {
-                        mobileMenu.style.display = 'block';
-                    } else {
-                        mobileMenu.style.display = 'none';
-                    }
-                });
-            }
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
         });
 
         // Nav scroll effect

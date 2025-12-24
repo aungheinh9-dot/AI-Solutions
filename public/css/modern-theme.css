@@ -170,9 +170,6 @@
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(6, 182, 212, 0.2);
     transition: all 0.3s ease;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
 .modern-nav-dark.scrolled {
@@ -191,24 +188,6 @@
 .nav-link-dark.active {
     color: #06b6d4;
     background: rgba(6, 182, 212, 0.1);
-}
-
-/* Mobile Menu Styles */
-#mobile-menu {
-    position: relative;
-    width: 100%;
-    z-index: 1001;
-    display: none;
-}
-
-#mobile-menu:not(.hidden) {
-    display: block !important;
-}
-
-@media (min-width: 768px) {
-    #mobile-menu {
-        display: none !important;
-    }
 }
 
 /* Buttons */
