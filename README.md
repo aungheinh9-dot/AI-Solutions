@@ -1,6 +1,14 @@
 # AI Solutions Website
 
-A comprehensive AI solutions company website with static HTML pages, interactive features, and multilingual support.
+A comprehensive AI solutions company website with static HTML pages and interactive features.
+
+## 🚀 Live Demo
+
+The website is deployed on **Railway** and can be accessed directly in your browser:
+
+**👉 [https://ai-solutions-production-5eb6.up.railway.app](https://ai-solutions-production-5eb6.up.railway.app)**
+
+Simply open the link above in your browser to view the complete AI Solutions website with all features working live!
 
 ## Features
 
@@ -18,41 +26,49 @@ A comprehensive AI solutions company website with static HTML pages, interactive
   - `project-ecommerce.html` - E-commerce AI Assistant
   - `project-healthcare.html` - Healthcare Analytics Platform
   - `project-manufacturing.html` - Smart Manufacturing System
+- **Other Pages**:
+  - `services.html` - All services overview
+  - `about.html` - About us page
+  - `projects.html` - All projects overview
+  - `articles.html` - Promotional articles
+  - `galleries.html` - Events and galleries
+  - `contact.html` - Contact page with form
 
 ### 🎨 Modern UI/UX
 - Responsive design with Tailwind CSS
-- Professional color scheme (Royal Blue theme)
+- Dark theme with cyan/emerald color scheme
 - Interactive animations and hover effects
 - Mobile-friendly navigation
 - Font Awesome icons
 
-### 🌍 Multilingual Support
-- English/Burmese language toggle
-- Real-time language switching
-- Persistent language preference
-- Complete translation coverage
-
 ### 📱 Interactive Features
-- AI Chatbot with keyword-based responses
-- Contact form with validation
-- Admin panel for inquiry management
-- Photo and video content integration
-- Smooth scrolling navigation
+- **AI Chatbot**: Interactive chatbot in bottom-right corner with keyword-based responses
+- **Contact Form**: Form with validation (name, email, phone, company, country, job title, project details)
+- **Admin Panel**: Password-protected admin area for viewing and managing customer inquiries
+- **Interactive Demos**: Working demos on service pages (NLP, Computer Vision, Predictive Analytics, Process Automation, AI Chatbots)
+- **Photo and Video Content**: Images and videos integrated throughout the site
+- **Smooth Scrolling Navigation**: Smooth page navigation
 
 ### 📧 Contact Integration
-- Updated contact email: `aungheinh9@gmail.com`
+- Contact email: `aungheinh9@gmail.com`
 - Form validation and submission
 - Success/error notifications
-- Admin inquiry management
+- Admin inquiry management dashboard
 
 ## How to Run
 
-### Option 1: Direct Browser Access (Recommended)
+### Option 1: Live Website (Easiest)
+**Simply open the live website in your browser:**
+- **Live URL**: [https://ai-solutions-production-5eb6.up.railway.app](https://ai-solutions-production-5eb6.up.railway.app)
+- The website is deployed on Railway and accessible 24/7
+- No setup required - just click the link and explore!
+
+### Option 2: Direct Browser Access (Local)
 1. Navigate to the `public` folder
 2. Open `index.html` in your web browser
 3. All features work without server setup
 
-### Option 2: Local Server
+### Option 3: Local Server
 1. Install Node.js dependencies:
    ```bash
    npm install
@@ -65,7 +81,7 @@ A comprehensive AI solutions company website with static HTML pages, interactive
 
 3. Open browser to `http://localhost:3000`
 
-### Option 3: Python Simple Server
+### Option 4: Python Simple Server
 ```bash
 cd public
 python -m http.server 8000
@@ -78,6 +94,12 @@ Then open `http://localhost:8000`
 public/
 ├── index.html              # Main website
 ├── admin.html              # Admin panel
+├── services.html           # Services overview
+├── about.html              # About us
+├── projects.html           # Projects overview
+├── articles.html           # Articles page
+├── galleries.html          # Events and galleries
+├── contact.html            # Contact page
 ├── machine-learning.html   # ML service page
 ├── nlp.html               # NLP service page
 ├── computer-vision.html    # CV service page
@@ -88,13 +110,17 @@ public/
 ├── project-healthcare.html # Healthcare project
 ├── project-manufacturing.html # Manufacturing project
 ├── css/
+│   ├── modern-theme.css   # Modern theme styles
 │   └── style.css          # Custom styles
 ├── js/
 │   ├── main.js           # Main JavaScript
 │   ├── chatbot.js        # Chatbot functionality
 │   ├── forms.js          # Form handling
-│   └── language-toggle.js # Language switching
-└── images/               # Image assets
+│   ├── modern-animations.js # Animations
+│   └── firebase-config.js # Firebase configuration
+└── admin/
+    ├── login.html        # Admin login
+    └── dashboard.html    # Admin dashboard
 ```
 
 ## Key Features Explained
@@ -103,7 +129,7 @@ public/
 Each service has its own dedicated page with:
 - Detailed service descriptions
 - Key features and benefits
-- Case studies and success stories
+- Interactive demos (working)
 - Technology stack information
 - Call-to-action sections
 
@@ -112,7 +138,7 @@ Detailed project showcases including:
 - Project overview and objectives
 - Key features and technologies
 - Results and impact metrics
-- Video demonstrations
+- Interactive demos
 - Technology stack details
 
 ### 🤖 AI Chatbot
@@ -121,38 +147,34 @@ Detailed project showcases including:
 - Predefined responses for common queries
 - Interactive chat interface
 - Welcome message and user guidance
-
-### 🌐 Language Toggle
-- Toggle between English and Burmese
-- Persistent language preference
-- Complete content translation
-- Real-time language switching
-- Professional translation quality
+- Located in bottom-right corner of pages
 
 ### 📝 Contact Form
 - Comprehensive form validation
 - Required field checking
 - Email format validation
-- Phone number validation
+- Phone number validation with country code selector
 - Success/error notifications
 - Form reset after submission
+- Stores data in Firebase/localStorage
 
 ### 👨‍💼 Admin Panel
 - Inquiry management dashboard
 - Statistics and metrics
 - Status filtering and updates
-- Export functionality
 - Modal-based detail views
+- Password-protected access
+- Responsive design
 
 ## Technologies Used
 
 - **Frontend**: HTML5, CSS3, JavaScript (ES6+)
 - **Styling**: Tailwind CSS
 - **Icons**: Font Awesome
-- **Images**: Unsplash (placeholder images)
-- **Videos**: YouTube embeds
+- **Images**: Unsplash
 - **Backend**: Node.js, Express.js (optional)
-- **Database**: Firebase (optional)
+- **Database**: Firebase Firestore (optional)
+- **Deployment**: Railway (live production)
 
 ## Browser Compatibility
 
